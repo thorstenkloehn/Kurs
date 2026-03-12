@@ -482,3 +482,23 @@ async function initEditor() {
         console.error('Editor Fehler:', e);
     }
 }
+
+// --- COOKIE BANNER LOGIC ---
+window.addEventListener('DOMContentLoaded', () => {
+    if (!localStorage.getItem('cookies-accepted')) {
+        setTimeout(() => {
+            const banner = document.getElementById('cookie-banner');
+            if (banner) banner.classList.add('show');
+        }, 1000);
+    }
+});
+
+window.acceptCookies = function() {
+    localStorage.setItem('cookies-accepted', 'true');
+    window.closeCookieBanner();
+};
+
+window.closeCookieBanner = function() {
+    const banner = document.getElementById('cookie-banner');
+    if (banner) banner.classList.remove('show');
+};
