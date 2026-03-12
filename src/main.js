@@ -4,6 +4,7 @@ import * as geminiTutorials from './content-tutorials.js';
 import * as geminiWiki from './content-codewiki.js';
 
 import * as claudeContent from './content-claude.js';
+import * as antigravityContent from './content-antigravity.js';
 
 let currentTopic = localStorage.getItem('topic') || 'gemini';
 
@@ -31,15 +32,22 @@ const topics = {
             tutorials: claudeContent.tutorials,
             codewiki: claudeContent.codewiki
         }
+    },
+    'antigravity': {
+        title: 'Google Antigravity',
+        install: 'https://antigravity.google/',
+        content: {
+            lernpfad: antigravityContent.lernpfad,
+            module: antigravityContent.module,
+            kurse: antigravityContent.kurse,
+            codelabs: antigravityContent.codelabs,
+            tutorials: antigravityContent.tutorials,
+            codewiki: antigravityContent.codewiki
+        }
     }
 };
 
 window.switchTopic = function(topic) {
-    if (topic === 'antigravity') {
-        window.location.href = '/Antigravity/index.html';
-        return;
-    }
-    
     currentTopic = topic;
     localStorage.setItem('topic', topic);
     document.body.setAttribute('data-topic', topic);
