@@ -35,6 +35,7 @@ export const tutorials = {
                     title: 'Token-Verbrauch verstehen',
                     icon: '📊',
                     content: 'Tokens sind die Grundeinheit der Abrechnung. 1 Token ≈ 0.75 Wörter auf Deutsch.',
+                    youtube: 'zjkBMFhNj_g', // Beispiel-Video ID (Gemini Developers)
                     code: '# Token-Statistiken anzeigen:\n/stats\n# → Input Tokens: 12.450\n# → Output Tokens: 3.210\n# → Gecachte Tokens: 8.000 (64% gespart!)\n# → Gesamtkosten dieser Session: ~$0.02\n\n# Kosten reduzieren:\n# 1. Token Caching aktivieren (settings.json: tokenCaching: true)\n# 2. .geminiignore für node_modules/, dist/ etc.\n# 3. Kontext-Fenster begrenzen: contextWindowSizeMB: 5',
                     lang: 'bash'
                 }

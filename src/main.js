@@ -220,6 +220,7 @@ function renderLernpfad() {
                 <h3>${s.title}</h3>
                 <p>${s.desc}</p>
                 ${s.code ? renderCode(s.code, s.lang) : ''}
+                ${s.youtube ? renderYouTube(s.youtube) : ''}
                 ${renderChips(s.chips)}
             </div>
         </div>`).join('');
@@ -240,6 +241,7 @@ function renderModule() {
                     <h3>${it.title}</h3>
                     <p>${it.content}</p>
                     ${it.code ? renderCode(it.code, it.lang) : ''}
+                    ${it.youtube ? renderYouTube(it.youtube) : ''}
                     ${it.tips ? renderTips(it.tips) : ''}
                     ${it.table ? renderTable(it.table) : ''}
                 </div>
@@ -359,9 +361,9 @@ function renderTutorials() {
                     ${it.table ? renderTable(it.table) : ''}
                     ${it.tips ? renderTips(it.tips) : ''}
                     ${it.code ? renderCode(it.code, it.lang) : ''}
-                </div>
-            </div>`).join('');
-        return `<h2>${g.title}</h2><div class="module-list">${items}</div>`;
+                    ${it.youtube ? renderYouTube(it.youtube) : ''}
+                    </div>
+                    </div>`).join('');        return `<h2>${g.title}</h2><div class="module-list">${items}</div>`;
     }).join('');
     return `<section class="animate-fade">
         <h1>${d.title}</h1>
@@ -528,6 +530,27 @@ window.addEventListener('DOMContentLoaded', () => {
 window.acceptCookies = function() {
     localStorage.setItem('cookies-accepted', 'true');
     window.closeCookieBanner();
+    // Re-render current section to show YouTube content
+    if (typeof doNavigate === 'function') doNavigate();
+};
+
+window.renderYouTube = function(videoId) {
+    const accepted = localStorage.getItem('cookies-accepted');
+    if (accepted === 'true') {
+        return `<iframe class="youtube-video" 
+            src="https://www.youtube-nocookie.com/embed/${videoId}" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>`;
+    } else {
+        return `<div class="youtube-placeholder">
+            <p>Für dieses Video wird eine Verbindung zu <strong>YouTube</strong> hergestellt. Dabei werden Daten an Drittanbieter übertragen.</p>
+            <button class="consent-btn" onclick="acceptCookies()">
+                <span style="font-size: 1.2rem;">▶</span> Video laden & Akzeptieren
+            </button>
+        </div>`;
+    }
 };
 
 window.closeCookieBanner = function() {
