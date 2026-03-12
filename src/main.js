@@ -14,6 +14,7 @@ import * as springContent from './content-springboot.js';
 import * as aiToolkitContent from './content-aitoolkit.js';
 import * as aiStudioContent from './content-aistudio.js';
 import { impressumHtml } from './content-impressum.js';
+import { datenschutzHtml } from './content-datenschutz.js';
 
 let currentTopic = localStorage.getItem('topic') || 'gemini';
 
@@ -476,12 +477,17 @@ function renderSection(section, subId) {
         case 'tutorials': return renderTutorials();
         case 'codewiki':  return renderCodeWiki();
         case 'impressum': return renderImpressum();
+        case 'datenschutz': return renderDatenschutz();
         default:          return renderHome();
     }
 }
 
 function renderImpressum() {
     return impressumHtml;
+}
+
+function renderDatenschutz() {
+    return datenschutzHtml;
 }
 
 function doNavigate() {
