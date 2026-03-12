@@ -11,6 +11,8 @@ import * as jsContent from './content-javascript.js';
 import * as csharpContent from './content-csharp.js';
 import * as aspnetContent from './content-aspnetcore.js';
 import * as springContent from './content-springboot.js';
+import * as aiToolkitContent from './content-aitoolkit.js';
+import * as aiStudioContent from './content-aistudio.js';
 
 let currentTopic = localStorage.getItem('topic') || 'gemini';
 
@@ -121,6 +123,30 @@ const topics = {
             codelabs: springContent.codelabs,
             tutorials: springContent.tutorials,
             codewiki: springContent.codewiki
+        }
+    },
+    'aitoolkit': {
+        title: 'AI Toolkit for VS Code',
+        install: 'code --install-extension ms-windows-ai-studio.windows-ai-studio',
+        content: {
+            lernpfad: aiToolkitContent.lernpfad,
+            module: aiToolkitContent.module,
+            kurse: aiToolkitContent.kurse,
+            codelabs: aiToolkitContent.codelabs,
+            tutorials: aiToolkitContent.tutorials,
+            codewiki: aiToolkitContent.codewiki
+        }
+    },
+    'aistudio': {
+        title: 'Google AI Studio',
+        install: 'https://aistudio.google.com/',
+        content: {
+            lernpfad: aiStudioContent.lernpfad,
+            module: aiStudioContent.module,
+            kurse: aiStudioContent.kurse,
+            codelabs: aiStudioContent.codelabs,
+            tutorials: aiStudioContent.tutorials,
+            codewiki: aiStudioContent.codewiki
         }
     }
 };
