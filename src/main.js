@@ -265,7 +265,8 @@ function renderKurse(activeId = null) {
                 <div class="step-label">Schritt</div>
                 <div class="step-content-body">
                     <h4>${s.step}</h4>
-                    ${renderCode(s.code, s.lang)}
+                    ${s.code ? renderCode(s.code, s.lang) : ''}
+                    ${s.youtube ? renderYouTube(s.youtube) : ''}
                 </div>
             </div>`).join('');
         return `<section class="animate-fade">

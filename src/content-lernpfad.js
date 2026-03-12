@@ -5,8 +5,9 @@ export const lernpfad = {
     intro: 'Dein strukturierter Weg von der Installation bis zum Profi-Einsatz.',
     steps: [
         {
-            num: 1, title: 'Installation',
-            desc: 'Gemini CLI wird als globales npm-Paket installiert.',
+            num: 1, title: 'Installation & Masterclass Video',
+            desc: 'Gemini CLI wird als globales npm-Paket installiert. Schau dir zuerst dieses Video an, um alle Funktionen von Gemini CLI im Überblick zu sehen.',
+            youtube: '9xE2DTxGvTY',
             code: 'npm install -g @google/gemini-cli\n\n# Version prüfen:\ngemini --version',
             lang: 'bash',
             chips: [{ label: 'Installationsdoku', url: 'https://geminicli.com/docs/get-started/installation' }]

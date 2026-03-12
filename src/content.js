@@ -11,8 +11,9 @@ export const content = {
         intro: 'Dein strukturierter Weg von der Installation bis zum Profi-Einsatz. Folge den Schritten der Reihe nach oder spring direkt zu einem Thema.',
         steps: [
             {
-                num: 1, title: 'Installation',
-                desc: 'Gemini CLI wird als globales npm-Paket installiert und steht dir danach überall im Terminal zur Verfügung.',
+                num: 1, title: 'Installation & Masterclass Guide',
+                desc: 'Gemini CLI wird als globales npm-Paket installiert. Schau dir zuerst die Video-Einführung an, um die wichtigsten Funktionen im Überblick zu sehen.',
+                youtube: '9xE2DTxGvTY',
                 code: 'npm install -g @google/gemini-cli\n\n# Danach testen:\ngemini --version',
                 lang: 'bash',
                 chips: [{ label: 'Offizielle Docs', url: 'https://geminicli.com/docs/get-started/installation' }]

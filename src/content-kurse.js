@@ -10,6 +10,7 @@ export const kurse = {
             description: 'Lerne, wie du Dateien liest, analysierst, schreibst und umstrukturierst.',
             lernziele: ['Dateien lesen und zusammenfassen lassen', 'Neuen Code generieren und in Dateien schreiben', 'Bulk-Operationen auf Verzeichnisse anwenden'],
             content: [
+                { step: 'Einführung & Video-Guide', youtube: '9xE2DTxGvTY' },
                 { step: 'Datei analysieren lassen', code: '# Im Gemini-Dialog:\n# "Erkläre mir den Code in src/auth.js"\n# "Fasse README.md auf Deutsch zusammen"\n# "Welche Sicherheitsprobleme siehst du in api/routes.js?"', lang: 'bash' },
                 { step: 'Datei schreiben lassen', code: '# "Erstelle eine neue Datei src/helpers/validate.js\n#  mit Validierungsfunktionen für:\n#  - E-Mail Adressen\n#  - Deutsche Postleitzahlen (5-stellig)\n#  - Telefonnummern (internationales Format)"', lang: 'bash' },
                 { step: 'Bulk-Refactoring', code: '# "Benenne alle Dateien in src/components/ von .jsx nach .tsx um\n#  und update die Import-Pfade in anderen Dateien entsprechend"\n\n# "Füge in jede Funktion in src/api/ einen try/catch Block ein\n#  der Fehler mit dem Logger loggt"', lang: 'bash' },
