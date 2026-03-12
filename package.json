@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "ver": "gh-pages -d dist --nojekyll --cname kurs.ahrensburg.city",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
