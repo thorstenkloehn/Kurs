@@ -14,6 +14,6 @@ Dieses Projekt ist ein interaktives Learning Portal für Gemini CLI.
 * monaco-languageclient
 
 ##  Navigation & Benutzerdaten
-* **Impressum:** Nutze `impressum.md` im Hauptverzeichnis. Erstelle dafür einen Menüpunkt "Impressum".
-* **Datenschutz:** Erstelle eine `datenschutz.md` und den dazugehörigen Menüpunkt "Datenschutz".
+* **Impressum:** Nutze `Benutzer/impressum.md` im Hauptverzeichnis. Erstelle dafür einen Menüpunkt "Impressum".
+* **Datenschutz:** Erstelle eine `Benutzer/datenschutz.md` und den dazugehörigen Menüpunkt "Datenschutz".
 * **Module:** Alle verfügbaren Lernmodule sollen in der Navigation angezeigt werden.
