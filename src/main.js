@@ -5,6 +5,7 @@ import * as geminiWiki from './content-codewiki.js';
 
 import * as claudeContent from './content-claude.js';
 import * as antigravityContent from './content-antigravity.js';
+import * as copilotContent from './content-copilot.js';
 
 let currentTopic = localStorage.getItem('topic') || 'gemini';
 
@@ -43,6 +44,18 @@ const topics = {
             codelabs: antigravityContent.codelabs,
             tutorials: antigravityContent.tutorials,
             codewiki: antigravityContent.codewiki
+        }
+    },
+    'copilot': {
+        title: 'GitHub Copilot',
+        install: 'https://github.com/features/copilot',
+        content: {
+            lernpfad: copilotContent.lernpfad,
+            module: copilotContent.module,
+            kurse: copilotContent.kurse,
+            codelabs: copilotContent.codelabs,
+            tutorials: copilotContent.tutorials,
+            codewiki: copilotContent.codewiki
         }
     }
 };
