@@ -6,6 +6,11 @@ import * as geminiWiki from './content-codewiki.js';
 import * as claudeContent from './content-claude.js';
 import * as antigravityContent from './content-antigravity.js';
 import * as copilotContent from './content-copilot.js';
+import * as javaContent from './content-java.js';
+import * as jsContent from './content-javascript.js';
+import * as csharpContent from './content-csharp.js';
+import * as aspnetContent from './content-aspnetcore.js';
+import * as springContent from './content-springboot.js';
 
 let currentTopic = localStorage.getItem('topic') || 'gemini';
 
@@ -56,6 +61,66 @@ const topics = {
             codelabs: copilotContent.codelabs,
             tutorials: copilotContent.tutorials,
             codewiki: copilotContent.codewiki
+        }
+    },
+    'java': {
+        title: 'Java Development',
+        install: 'https://www.oracle.com/java/technologies/downloads/',
+        content: {
+            lernpfad: javaContent.lernpfad,
+            module: javaContent.module,
+            kurse: javaContent.kurse,
+            codelabs: javaContent.codelabs,
+            tutorials: javaContent.tutorials,
+            codewiki: javaContent.codewiki
+        }
+    },
+    'javascript': {
+        title: 'JavaScript Fullstack',
+        install: 'https://nodejs.org/',
+        content: {
+            lernpfad: jsContent.lernpfad,
+            module: jsContent.module,
+            kurse: jsContent.kurse,
+            codelabs: jsContent.codelabs,
+            tutorials: jsContent.tutorials,
+            codewiki: jsContent.codewiki
+        }
+    },
+    'csharp': {
+        title: 'C# Programming',
+        install: 'https://dotnet.microsoft.com/download/csharp',
+        content: {
+            lernpfad: csharpContent.lernpfad,
+            module: csharpContent.module,
+            kurse: csharpContent.kurse,
+            codelabs: csharpContent.codelabs,
+            tutorials: csharpContent.tutorials,
+            codewiki: csharpContent.codewiki
+        }
+    },
+    'aspnetcore': {
+        title: 'ASP.NET Core',
+        install: 'dotnet new webapi',
+        content: {
+            lernpfad: aspnetContent.lernpfad,
+            module: aspnetContent.module,
+            kurse: aspnetContent.kurse,
+            codelabs: aspnetContent.codelabs,
+            tutorials: aspnetContent.tutorials,
+            codewiki: aspnetContent.codewiki
+        }
+    },
+    'springboot': {
+        title: 'Spring Boot',
+        install: 'https://start.spring.io/',
+        content: {
+            lernpfad: springContent.lernpfad,
+            module: springContent.module,
+            kurse: springContent.kurse,
+            codelabs: springContent.codelabs,
+            tutorials: springContent.tutorials,
+            codewiki: springContent.codewiki
         }
     }
 };
