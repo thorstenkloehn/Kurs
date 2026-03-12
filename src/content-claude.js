@@ -70,6 +70,7 @@ export const lernpfad = {
         {
             num: 10, title: 'Expertise: Skills & Agents',
             desc: 'Eigene Slash-Befehle als Skills erstellen und parallele Agents nutzen.',
+            youtube: 'STRApeg2pcA',
             code: '# .claude/skills/review.md\n---\ndescription: "Führt einen Code-Review durch"\n---\nReviewe die aktuellen Änderungen in {{ $1 || "." }} auf:\n1. Security-Issues\n2. Performance-Flaschenhälse\n3. Code-Style nach CLAUDE.md',
             lang: 'markdown',
             chips: [{ label: 'Skills & Agents', url: 'https://code.claude.com/docs/de/skills' }]

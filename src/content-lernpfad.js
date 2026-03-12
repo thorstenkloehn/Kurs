@@ -166,6 +166,7 @@ export const module = {
                     title: 'Agent Skills',
                     icon: '🤖',
                     content: 'Agent Skills sind spezialisierte Agenten für bestimmte Aufgaben – z.B. Code-Review, Dokumentation oder Testing.',
+                    youtube: 'STRApeg2pcA',
                     code: '# Im Dialog einen Skill aktivieren:\n/skills list\n/skills use code-review\n\n# Eigenen Skill anlegen:\n# .gemini/skills/testwriter.md\n---\nname: testwriter\ndescription: Schreibt Unit-Tests\n---\nAnalysiere die gegebene Funktion und schreibe\nvollständige Jest Tests dafür.',
                     lang: 'bash'
                 },
