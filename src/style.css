@@ -605,3 +605,17 @@ section h2 {
 @keyframes slideUp { from { transform: translate(-50%, 100%); opacity: 0; } to { transform: translate(-50%, 0); opacity: 1; } }
 @media (max-width: 640px) { #cookie-banner { flex-direction: column; text-align: center; bottom: 1rem; } }
 
+/* --- IMPRESSUM --- */
+.impressum-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+}
+.impressum-container h1 { margin-bottom: 2rem; color: var(--accent-color); }
+.impressum-container h2 { margin-top: 2rem; font-size: 1.25rem; }
+.impressum-container h3 { margin-top: 1.5rem; font-size: 1.1rem; }
+.impressum-container section { margin-bottom: 2rem; }
+.impressum-container p { margin-bottom: 1rem; color: var(--text-secondary); }
+.nav-separator { height: 1px; background: var(--border-color); margin: 1rem 0; opacity: 0.5; list-style: none; }
+

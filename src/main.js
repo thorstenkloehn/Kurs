@@ -13,6 +13,7 @@ import * as aspnetContent from './content-aspnetcore.js';
 import * as springContent from './content-springboot.js';
 import * as aiToolkitContent from './content-aitoolkit.js';
 import * as aiStudioContent from './content-aistudio.js';
+import { impressumHtml } from './content-impressum.js';
 
 let currentTopic = localStorage.getItem('topic') || 'gemini';
 
@@ -471,8 +472,13 @@ function renderSection(section, subId) {
         case 'codelabs':  return renderCodelabs(subId);
         case 'tutorials': return renderTutorials();
         case 'codewiki':  return renderCodeWiki();
+        case 'impressum': return renderImpressum();
         default:          return renderHome();
     }
+}
+
+function renderImpressum() {
+    return impressumHtml;
 }
 
 function doNavigate() {
