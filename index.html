@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini CLI Learning Portal</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Lerne Gemini CLI mit interaktiven Kursen, Modulen und Codelabs.">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="topic-switcher">
+            <select id="topic-select" onchange="window.switchTopic(this.value)">
+                <option value="gemini">Gemini CLI (Standard)</option>
+                <option value="claude-spa">Claude Code (Basic)</option>
+                <option value="antigravity">🛰️ Google Antigravity</option>
+            </select>
+        </div>
+        <h2 id="sidebar-title">Gemini CLI</h2>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Prolog</a></li>
+                <li><a href="#lernpfad">Lernpfad</a></li>
+                <li><a href="#module">Module</a></li>
+                <li><a href="#kurse">Kurse</a></li>
+                <li><a href="#codelabs">Codelabs</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#codewiki">CodeWiki</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main id="app">
+        <section id="home" class="hero animate-fade">
+            <h1>Entfessele Gemini in deiner Konsole.</h1>
+            <p>Meistere das Gemini CLI mit praxisnahen Kursen und interaktiven Übungen direkt im Browser.</p>
+            <div class="content-grid">
+                <div class="card" onclick="location.hash='#lernpfad'">
+                    <h3>Lernpfad</h3>
+                    <p>Beginne deine Reise vom Anfänger bis zum Profi-Developer.</p>
+                </div>
+                <div class="card" onclick="location.hash='#codelabs'">
+                    <h3>Codelabs</h3>
+                    <p>Praktische Tutorials mit interaktivem Code-Editor.</p>
+                </div>
+                <div class="card" onclick="location.hash='#codewiki'">
+                    <h3>CodeWiki</h3>
+                    <p>Alle Begriffe und Commands auf einen Blick.</p>
+                </div>
+            </div>
+            
+            <div id="editor-wrapper" style="margin-top: 4rem;">
+                <h2>Probier es aus</h2>
+                <div id="editor-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

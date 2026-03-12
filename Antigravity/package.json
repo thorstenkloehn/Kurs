@@ -1,0 +1,14 @@
+{
+  "name": "antigravity-learning-portal",
+  "version": "1.0.0",
+  "description": "Google Antigravity Learning Portal",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}
