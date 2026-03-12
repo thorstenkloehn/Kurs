@@ -1,5 +1,5 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/editor-hNmHkTZF.js","assets/editor-Dvl_Svmm.css"])))=>i.map(i=>d[i]);
-(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))i(t);new MutationObserver(t=>{for(const r of t)if(r.type==="childList")for(const o of r.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&i(o)}).observe(document,{childList:!0,subtree:!0});function s(t){const r={};return t.integrity&&(r.integrity=t.integrity),t.referrerPolicy&&(r.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?r.credentials="include":t.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function i(t){if(t.ep)return;t.ep=!0;const r=s(t);fetch(t.href,r)}})();const w="modulepreload",P=function(e){return"/"+e},b={},M=function(n,s,i){let t=Promise.resolve();if(s&&s.length>0){let I=function(a){return Promise.all(a.map(c=>Promise.resolve(c).then(g=>({status:"fulfilled",value:g}),g=>({status:"rejected",reason:g}))))};document.getElementsByTagName("link");const o=document.querySelector("meta[property=csp-nonce]"),l=o?.nonce||o?.getAttribute("nonce");t=I(s.map(a=>{if(a=P(a),a in b)return;b[a]=!0;const c=a.endsWith(".css"),g=c?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${a}"]${g}`))return;const d=document.createElement("link");if(d.rel=c?"stylesheet":w,c||(d.as="script"),d.crossOrigin="",d.href=a,l&&d.setAttribute("nonce",l),document.head.appendChild(d),c)return new Promise((y,z)=>{d.addEventListener("load",y),d.addEventListener("error",()=>z(new Error(`Unable to preload CSS for ${a}`)))})}))}function r(o){const l=new Event("vite:preloadError",{cancelable:!0});if(l.payload=o,window.dispatchEvent(l),!l.defaultPrevented)throw o}return t.then(o=>{for(const l of o||[])l.status==="rejected"&&r(l.reason);return n().catch(r)})},A={title:"📍 Lernpfad – Gemini CLI",intro:"Dein strukturierter Weg von der Installation bis zum Profi-Einsatz.",steps:[{num:1,title:"Installation",desc:"Gemini CLI wird als globales npm-Paket installiert.",code:`npm install -g @google/gemini-cli
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/editor-D2g2SPEf.js","assets/editor-Dvl_Svmm.css"])))=>i.map(i=>d[i]);
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))i(n);new MutationObserver(n=>{for(const s of n)if(s.type==="childList")for(const o of s.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&i(o)}).observe(document,{childList:!0,subtree:!0});function r(n){const s={};return n.integrity&&(s.integrity=n.integrity),n.referrerPolicy&&(s.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?s.credentials="include":n.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function i(n){if(n.ep)return;n.ep=!0;const s=r(n);fetch(n.href,s)}})();const E="modulepreload",z=function(e){return"/"+e},b={},P=function(t,r,i){let n=Promise.resolve();if(r&&r.length>0){let C=function(a){return Promise.all(a.map(c=>Promise.resolve(c).then(m=>({status:"fulfilled",value:m}),m=>({status:"rejected",reason:m}))))};document.getElementsByTagName("link");const o=document.querySelector("meta[property=csp-nonce]"),l=o?.nonce||o?.getAttribute("nonce");n=C(r.map(a=>{if(a=z(a),a in b)return;b[a]=!0;const c=a.endsWith(".css"),m=c?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${a}"]${m}`))return;const d=document.createElement("link");if(d.rel=c?"stylesheet":E,c||(d.as="script"),d.crossOrigin="",d.href=a,l&&d.setAttribute("nonce",l),document.head.appendChild(d),c)return new Promise((y,A)=>{d.addEventListener("load",y),d.addEventListener("error",()=>A(new Error(`Unable to preload CSS for ${a}`)))})}))}function s(o){const l=new Event("vite:preloadError",{cancelable:!0});if(l.payload=o,window.dispatchEvent(l),!l.defaultPrevented)throw o}return n.then(o=>{for(const l of o||[])l.status==="rejected"&&s(l.reason);return t().catch(s)})},M={title:"📍 Lernpfad – Gemini CLI",intro:"Dein strukturierter Weg von der Installation bis zum Profi-Einsatz.",steps:[{num:1,title:"Installation & Masterclass Video",desc:"Gemini CLI wird als globales npm-Paket installiert. Schau dir zuerst dieses Video an, um alle Funktionen von Gemini CLI im Überblick zu sehen.",youtube:"9xE2DTxGvTY",code:`npm install -g @google/gemini-cli
 
 # Version prüfen:
 gemini --version`,lang:"bash",chips:[{label:"Installationsdoku",url:"https://geminicli.com/docs/get-started/installation"}]},{num:2,title:"Authentifizierung",desc:"Verbinde deinen Google-Account oder nutze einen API-Key für Enterprise.",code:`# Standard: Google OAuth (Browser öffnet sich)
@@ -70,7 +70,7 @@ gemini -p "Liste alle Funktionen in src/api.js" --output json`,lang:"bash",chips
       "env": { "GITHUB_TOKEN": "ghp_..." }
     }
   }
-}`,lang:"json",chips:[{label:"MCP Setup",url:"https://geminicli.com/docs/cli/tutorials/mcp-setup"},{label:"Extensions",url:"https://geminicli.com/docs/extensions"}]}]},x={title:"📦 Module",intro:"Alle wichtigen Themen rund um Gemini CLI – vertieft erklärt.",groups:[{title:"⚙️ Konfiguration",items:[{title:"settings.json – Die Hauptkonfiguration",icon:"🔧",content:"Alle Einstellungen landen in <code>~/.gemini/settings.json</code> (global) oder <code>.gemini/settings.json</code> (Projekt). Projekteinstellungen überschreiben globale.",code:`{
+}`,lang:"json",chips:[{label:"MCP Setup",url:"https://geminicli.com/docs/cli/tutorials/mcp-setup"},{label:"Extensions",url:"https://geminicli.com/docs/extensions"}]}]},D={title:"📦 Module",intro:"Alle wichtigen Themen rund um Gemini CLI – vertieft erklärt.",groups:[{title:"⚙️ Konfiguration",items:[{title:"settings.json – Die Hauptkonfiguration",icon:"🔧",content:"Alle Einstellungen landen in <code>~/.gemini/settings.json</code> (global) oder <code>.gemini/settings.json</code> (Projekt). Projekteinstellungen überschreiben globale.",code:`{
   "theme": "dark",
   "model": "gemini-2.5-pro",
   "sandbox": true,
@@ -140,7 +140,7 @@ Dies ist ein E-Commerce Backend mit Node.js.
 }`,lang:"json"},{title:"System Prompt Override",icon:"🎯",content:"Überschreibe den Standard-System-Prompt für spezifische Anwendungsfälle.",code:`// settings.json
 {
   "systemPrompt": "Du bist ein erfahrener TypeScript-Entwickler. Antworte immer auf Deutsch. Bevorzuge funktionale Patterns und unveränderliche Datenstrukturen."
-}`,lang:"json"}]},{title:"✨ Features",items:[{title:"Agent Skills",icon:"🤖",content:"Agent Skills sind spezialisierte Agenten für bestimmte Aufgaben – z.B. Code-Review, Dokumentation oder Testing.",code:`# Im Dialog einen Skill aktivieren:
+}`,lang:"json"}]},{title:"✨ Features",items:[{title:"Agent Skills",icon:"🤖",content:"Agent Skills sind spezialisierte Agenten für bestimmte Aufgaben – z.B. Code-Review, Dokumentation oder Testing.",youtube:"STRApeg2pcA",code:`# Im Dialog einen Skill aktivieren:
 /skills list
 /skills use code-review
 
@@ -282,7 +282,7 @@ export default {
   "afterSession": {
     "shell": "git add -p"
   }
-}`,lang:"json"}]}]},T={title:"🎓 Kurse",intro:"Eigene Lerneinheiten zu allen wichtigen Gemini CLI Themen – in Deutsch.",items:[{id:"kurs-1",badge:"Anfänger",icon:"📁",duration:"~20 Min",title:"Dateimanagement mit Gemini CLI",description:"Lerne, wie du Dateien liest, analysierst, schreibst und umstrukturierst.",lernziele:["Dateien lesen und zusammenfassen lassen","Neuen Code generieren und in Dateien schreiben","Bulk-Operationen auf Verzeichnisse anwenden"],content:[{step:"Datei analysieren lassen",code:`# Im Gemini-Dialog:
+}`,lang:"json"}]}]},T={title:"🎓 Kurse",intro:"Eigene Lerneinheiten zu allen wichtigen Gemini CLI Themen – in Deutsch.",items:[{id:"kurs-1",badge:"Anfänger",icon:"📁",duration:"~20 Min",title:"Dateimanagement mit Gemini CLI",description:"Lerne, wie du Dateien liest, analysierst, schreibst und umstrukturierst.",lernziele:["Dateien lesen und zusammenfassen lassen","Neuen Code generieren und in Dateien schreiben","Bulk-Operationen auf Verzeichnisse anwenden"],content:[{step:"Einführung & Video-Guide",youtube:"9xE2DTxGvTY"},{step:"Datei analysieren lassen",code:`# Im Gemini-Dialog:
 # "Erkläre mir den Code in src/auth.js"
 # "Fasse README.md auf Deutsch zusammen"
 # "Welche Sicherheitsprobleme siehst du in api/routes.js?"`,lang:"bash"},{step:"Datei schreiben lassen",code:`# "Erstelle eine neue Datei src/helpers/validate.js
@@ -529,7 +529,7 @@ export default {
 # Oder als npm-Paket:
 npm publish
 # → In settings.json:
-# { "extensions": ["meine-extension"] }`,lang:"json"}]}]},j={title:"🧪 Codelabs",intro:"Hands-on Workshops – führe die Schritte selbst durch und nutze den Code-Playground.",items:[{id:"lab-1",badge:"Anfänger",icon:"🚀",duration:"15 Min",title:"Codelab 1: Installation & erster Chat",goal:"Gemini CLI installieren und den ersten Befehl absetzen.",steps:[{title:"Node.js Version prüfen",code:`node --version  # Mindestens v18.0.0
+# { "extensions": ["meine-extension"] }`,lang:"json"}]}]},x={title:"🧪 Codelabs",intro:"Hands-on Workshops – führe die Schritte selbst durch und nutze den Code-Playground.",items:[{id:"lab-1",badge:"Anfänger",icon:"🚀",duration:"15 Min",title:"Codelab 1: Installation & erster Chat",goal:"Gemini CLI installieren und den ersten Befehl absetzen.",steps:[{title:"Node.js Version prüfen",code:`node --version  # Mindestens v18.0.0
 npm --version   # Mindestens v9.0.0`,lang:"bash"},{title:"Gemini CLI installieren",code:`npm install -g @google/gemini-cli
 gemini --version
 # → Gemini CLI v1.x.x`,lang:"bash"},{title:"Ersten Chat starten",code:`# Terminal öffnen und eingeben:
@@ -772,7 +772,7 @@ gemini
 /tools    # → list_issues sollte erscheinen!
 
 # Nutzung:
-# "Liste alle offenen Issues im MYAPP Projekt"`,lang:"json"}]}]},D={title:"📖 Tutorials & Referenz",intro:"Technische Hintergründe, vollständige Referenz und Entwickler-Ressourcen.",groups:[{title:"🧠 Modell & KI",items:[{title:"Das richtige Modell wählen",icon:"🎯",content:"Gemini CLI unterstützt mehrere Modelle. Wähle je nach Aufgabe und Budget:",table:[["Modell","Kontextfenster","Stärke","Wann nutzen?"],["gemini-2.5-pro","1.000.000 Token","Höchste Qualität, Reasoning","Große Codebasen, komplexe Analyse, Architektur"],["gemini-2.5-flash","1.000.000 Token","Schnell & günstig","Quick-Fixes, einfache Fragen, hohe Anfragerate"],["gemini-2.0-flash","128.000 Token","Ausgewogen","Standard Entwicklungsaufgaben"]]},{title:"Prompt Engineering für Entwickler",icon:"✍️",content:"So formulierst du Anfragen für maximale Qualität:",tips:['Sei spezifisch: "Refactore Funktion X in src/utils.js zeile 42-80" statt "verbessere den Code"','Gib Kontext: "Wir nutzen Express 5, TypeScript strict, Prisma ORM"','Definiere das Ergebnis: "Antwort als JSON-Objekt" oder "nur der Code, keine Erklärung"',"Nutze GEMINI.md für projektweite Regeln – dann sparst du dir Kontext in jeder Anfrage",'Iteriere: Starte grob, verfeinere dann: "Mach es noch kürzer / füge Error Handling hinzu"','Zeige Beispiele: "Mache es wie in src/services/userService.ts"']},{title:"Token-Verbrauch verstehen",icon:"📊",content:"Tokens sind die Grundeinheit der Abrechnung. 1 Token ≈ 0.75 Wörter auf Deutsch.",code:`# Token-Statistiken anzeigen:
+# "Liste alle offenen Issues im MYAPP Projekt"`,lang:"json"}]}]},G={title:"📖 Tutorials & Referenz",intro:"Technische Hintergründe, vollständige Referenz und Entwickler-Ressourcen.",groups:[{title:"🧠 Modell & KI",items:[{title:"Das richtige Modell wählen",icon:"🎯",content:"Gemini CLI unterstützt mehrere Modelle. Wähle je nach Aufgabe und Budget:",table:[["Modell","Kontextfenster","Stärke","Wann nutzen?"],["gemini-2.5-pro","1.000.000 Token","Höchste Qualität, Reasoning","Große Codebasen, komplexe Analyse, Architektur"],["gemini-2.5-flash","1.000.000 Token","Schnell & günstig","Quick-Fixes, einfache Fragen, hohe Anfragerate"],["gemini-2.0-flash","128.000 Token","Ausgewogen","Standard Entwicklungsaufgaben"]]},{title:"Prompt Engineering für Entwickler",icon:"✍️",content:"So formulierst du Anfragen für maximale Qualität:",tips:['Sei spezifisch: "Refactore Funktion X in src/utils.js zeile 42-80" statt "verbessere den Code"','Gib Kontext: "Wir nutzen Express 5, TypeScript strict, Prisma ORM"','Definiere das Ergebnis: "Antwort als JSON-Objekt" oder "nur der Code, keine Erklärung"',"Nutze GEMINI.md für projektweite Regeln – dann sparst du dir Kontext in jeder Anfrage",'Iteriere: Starte grob, verfeinere dann: "Mach es noch kürzer / füge Error Handling hinzu"','Zeige Beispiele: "Mache es wie in src/services/userService.ts"']},{title:"Token-Verbrauch verstehen",icon:"📊",content:"Tokens sind die Grundeinheit der Abrechnung. 1 Token ≈ 0.75 Wörter auf Deutsch.",youtube:"zjkBMFhNj_g",code:`# Token-Statistiken anzeigen:
 /stats
 # → Input Tokens: 12.450
 # → Output Tokens: 3.210
@@ -947,7 +947,7 @@ npm run test:integration -- --grep "file management"
 npm run test:integration -- --verbose
 
 # E2E-Tests:
-npm run test:e2e`,lang:"bash"}]}]},G={title:"🧠 CodeWiki – Gemini CLI Referenz",intro:"Das ultimative Glossar für alle Befehle, Konzepte und Konfigurationen von Gemini CLI.",categories:[{name:"Grundlagen",items:[{term:"CLI",definition:"Command Line Interface – Die textbasierte Schnittstelle zur Kommunikation mit Gemini."},{term:"Interactive Mode",definition:"Der Standard-Modus von Gemini CLI, in dem ein Dialog geführt wird."},{term:"Headless Mode",definition:"Ausführung ohne Dialog, ideal für Scripts und CI/CD (--headless oder -p)."},{term:"Sandbox",definition:"Eine isolierte Umgebung zur sicheren Ausführung von Shell-Befehlen."},{term:"Token",definition:"Die kleinste Einheit der Textverarbeitung. Ein Wort besteht oft aus mehreren Tokens."}]},{name:"Konfiguration",items:[{term:"settings.json",definition:"Die zentrale Konfigurationsdatei (~/.gemini/settings.json)."},{term:"GEMINI.md",definition:"Projektspezifischer Kontext, der automatisch geladen wird."},{term:".geminiignore",definition:"Dateien/Ordner, die vom Kontext ausgeschlossen werden sollen."},{term:"trustedFolders",definition:"Verzeichnisse, in denen Gemini uneingeschränkt Shell-Befehle ausführen darf."},{term:"thinkingBudget",definition:'Parameter, der steuert, wie viel Zeit sich das Modell zum "Nachdenken" nimmt.'}]},{name:"Features & Begriffe",items:[{term:"MCP",definition:"Model Context Protocol – Standard zur Anbindung externer Datenquellen (Tools)."},{term:"Memory",definition:"Persistente Fakten, die sich Gemini über Sessions hinweg merkt (/memory)."},{term:"Checkpoint",definition:"Ein Snapshot des aktuellen Zustands und des Dateisystems (/checkpoint)."},{term:"Rewind",definition:"Rückgängigmachen von Änderungen und Zurückspringen in der Historie (/rewind)."},{term:"Subagent",definition:"Spezialisierte KI-Instanzen für Teilaufgaben (Code-Review, Tests)."},{term:"Context Window",definition:"Der maximale Textanteil (Tokens), den Gemini gleichzeitig verarbeiten kann (bis zu 1M)."}]},{name:"Wichtige Commands",items:[{term:"/help",definition:"Zeigt alle verfügbaren Slash-Befehle an."},{term:"/tools",definition:"Listet alle aktiven Werkzeuge (Filesystem, Web, MCP) auf."},{term:"/plan",definition:"Schaltet den Plan-Modus ein/aus für sicherere Refactorings."},{term:"/stats",definition:"Zeigt Token-Verbrauch und geschätzte Kosten an."},{term:"/compress",definition:"Komprimiert den bisherigen Chatverlauf um Token zu sparen."}]}]},L={title:"📍 Lernpfad – Claude Code",intro:"Ihr strukturierter Weg vom ersten Befehl bis zur vollständigen KI-nativen Entwicklung.",steps:[{num:1,title:"Installation & Umgebung",desc:"Claude Code lässt sich auf allen Plattformen installieren. Optimieren Sie Ihre Shell für beste Ergebnisse.",code:`curl -fsSL https://claude.ai/install.sh | bash
+npm run test:e2e`,lang:"bash"}]}]},j={title:"🧠 CodeWiki – Gemini CLI Referenz",intro:"Das ultimative Glossar für alle Befehle, Konzepte und Konfigurationen von Gemini CLI.",categories:[{name:"Grundlagen",items:[{term:"CLI",definition:"Command Line Interface – Die textbasierte Schnittstelle zur Kommunikation mit Gemini."},{term:"Interactive Mode",definition:"Der Standard-Modus von Gemini CLI, in dem ein Dialog geführt wird."},{term:"Headless Mode",definition:"Ausführung ohne Dialog, ideal für Scripts und CI/CD (--headless oder -p)."},{term:"Sandbox",definition:"Eine isolierte Umgebung zur sicheren Ausführung von Shell-Befehlen."},{term:"Token",definition:"Die kleinste Einheit der Textverarbeitung. Ein Wort besteht oft aus mehreren Tokens."}]},{name:"Konfiguration",items:[{term:"settings.json",definition:"Die zentrale Konfigurationsdatei (~/.gemini/settings.json)."},{term:"GEMINI.md",definition:"Projektspezifischer Kontext, der automatisch geladen wird."},{term:".geminiignore",definition:"Dateien/Ordner, die vom Kontext ausgeschlossen werden sollen."},{term:"trustedFolders",definition:"Verzeichnisse, in denen Gemini uneingeschränkt Shell-Befehle ausführen darf."},{term:"thinkingBudget",definition:'Parameter, der steuert, wie viel Zeit sich das Modell zum "Nachdenken" nimmt.'}]},{name:"Features & Begriffe",items:[{term:"MCP",definition:"Model Context Protocol – Standard zur Anbindung externer Datenquellen (Tools)."},{term:"Memory",definition:"Persistente Fakten, die sich Gemini über Sessions hinweg merkt (/memory)."},{term:"Checkpoint",definition:"Ein Snapshot des aktuellen Zustands und des Dateisystems (/checkpoint)."},{term:"Rewind",definition:"Rückgängigmachen von Änderungen und Zurückspringen in der Historie (/rewind)."},{term:"Subagent",definition:"Spezialisierte KI-Instanzen für Teilaufgaben (Code-Review, Tests)."},{term:"Context Window",definition:"Der maximale Textanteil (Tokens), den Gemini gleichzeitig verarbeiten kann (bis zu 1M)."}]},{name:"Wichtige Commands",items:[{term:"/help",definition:"Zeigt alle verfügbaren Slash-Befehle an."},{term:"/tools",definition:"Listet alle aktiven Werkzeuge (Filesystem, Web, MCP) auf."},{term:"/plan",definition:"Schaltet den Plan-Modus ein/aus für sicherere Refactorings."},{term:"/stats",definition:"Zeigt Token-Verbrauch und geschätzte Kosten an."},{term:"/compress",definition:"Komprimiert den bisherigen Chatverlauf um Token zu sparen."}]}]},L={title:"📍 Lernpfad – Claude Code",intro:"Ihr strukturierter Weg vom ersten Befehl bis zur vollständigen KI-nativen Entwicklung.",steps:[{num:1,title:"Installation & Umgebung",desc:"Claude Code lässt sich auf allen Plattformen installieren. Optimieren Sie Ihre Shell für beste Ergebnisse.",code:`curl -fsSL https://claude.ai/install.sh | bash
 
 # macOS mit Homebrew:
 brew install --cask claude-code
@@ -1010,7 +1010,7 @@ claude mcp add postgres -e DATABASE_URL=$DB_URL -- \\
       }]
     }]
   }
-}`,lang:"json",chips:[{label:"Hooks Docs",url:"https://code.claude.com/docs/de/hooks"}]},{num:10,title:"Expertise: Skills & Agents",desc:"Eigene Slash-Befehle als Skills erstellen und parallele Agents nutzen.",code:`# .claude/skills/review.md
+}`,lang:"json",chips:[{label:"Hooks Docs",url:"https://code.claude.com/docs/de/hooks"}]},{num:10,title:"Expertise: Skills & Agents",desc:"Eigene Slash-Befehle als Skills erstellen und parallele Agents nutzen.",youtube:"STRApeg2pcA",code:`# .claude/skills/review.md
 ---
 description: "Führt einen Code-Review durch"
 ---
@@ -1040,48 +1040,222 @@ claude mcp status my-server`,lang:"bash"},{title:"Eigene MCP Server",icon:"🛠�
 description: "Security Audit"
 ---
 Prüfe {{ $1 }} auf Vulnerabilities.`,lang:"markdown"},{step:"CI Hook Setup",code:`// settings.json
-"hooks": { "SessionStart": [...] }`,lang:"json"},{step:"Parallel Agent Task",code:'claude "Use parallel agents to implement Feature A and B"',lang:"bash"}]}]},$={title:"🧪 Codelabs – Claude Code",intro:"Interaktive Praxis-Übungen direkt im Browser-Editor.",items:[{id:"lab-1",badge:"Anfänger",icon:"🎯",duration:"30 Min",title:"Codelab: Mein erster Claude-Edit",goal:"Lerne wie Claude Code Dateien liest, Änderungen vorschlägt und diese nach deiner Freigabe schreibt.",steps:[{title:"Datei erstellen",code:'echo "function add(a, b) { return a + b; }" > math.js',lang:"bash"},{title:"Claude beauftragen",code:'claude "Add documentation and input validation to math.js"',lang:"bash"},{title:"Resultat prüfen",code:"cat math.js",lang:"bash"}]},{id:"lab-2",badge:"Fortgeschritten",icon:"🔧",duration:"45 Min",title:"Codelab: Refactoring Legacy Code",goal:"Nutze Claude Code um ein altes Modul zu modernisieren und Tests hinzuzufügen.",steps:[{title:"Analyse",code:'claude "Explain the logic in legacy-module.js"',lang:"bash"},{title:"Modernisierung",code:'claude "Refactor legacy-module.js to use TypeScript and ES Modules"',lang:"bash"},{title:"Testing",code:'claude "Write unit tests for the refactored module and run them"',lang:"bash"}]}]},N={title:"📖 Tutorials – Claude Code",intro:"Best Practices, Tipps und vollständige Befehlsreferenz.",groups:[{title:"🧠 Mentale Modelle",items:[{title:"Vom Coder zum Architekten",icon:"🤝",content:"Betrachten Sie Claude Code als einen extrem schnellen Junior-Entwickler. Sie geben die Richtung vor, Claude führt aus.",tips:["Seien Sie spezifisch bei Anweisungen","Reviewen Sie jeden Diff sorgfältig","Nutzen Sie CLAUDE.md für dauerhafte Regeln"]}]},{title:"⌨️ CLI Referenz",items:[{title:"Alle Befehle auf einen Blick",icon:"⌨️",content:"Die wichtigsten Kommandozeilen-Befehle und ihre Wirkung.",table:[["Befehl","Beschreibung"],["claude","Interaktive REPL starten"],['claude -p "Prompt"',"Einmalige Antwort (Headless)"],["claude -c","Letzte Sitzung fortsetzen"],["claude commit","Geführter Commit-Dialog"],["claude mcp add","Neuen MCP Server hinzufügen"],["claude skill add","Neuen Skill hinzufügen"]]},{title:"Keyboard Shortcuts",icon:"⚡",content:"Produktivitäts-Shortcuts in der REPL.",table:[["Shortcut","Aktion"],["Ctrl+C","Abbrechen / Leeren"],["Ctrl+D","Beenden"],["Shift+Tab","Thinking Mode umschalten"],["↑ / ↓","Befehls-Historie"]]}]}]},F={title:"🧠 CodeWiki – Claude Code",intro:"Das ultimative Glossar für alle Begriffe rund um Claude Code.",categories:[{name:"Grundlagen",items:[{term:"Agentic Coding",definition:"Die Fähigkeit der KI, aktiv Code zu schreiben, Tests auszuführen und Shell-Befehle zu nutzen, um ein Ziel zu erreichen."},{term:"REPL",definition:"Read-Eval-Print-Loop: Die interaktive Kommandozeilen-Schnittstelle von Claude Code."},{term:"Diff",definition:"Der Unterschied zwischen dem aktuellen Code und der von Claude vorgeschlagenen Änderung."}]},{name:"Konzepte & Files",items:[{term:"CLAUDE.md",definition:"Die zentrale Konfigurationsdatei für projektweite Anweisungen, Coding-Styles und Architektur-Regeln."},{term:"settings.json",definition:"Globale Konfigurationsdatei für Benutzerpräferenzen wie Themes, Modelle und Berechtigungen."},{term:"MCP",definition:"Model Context Protocol – Ein offener Standard zur Anbindung externer Tools an KI-Modelle."}]},{name:"Security & Control",items:[{term:"Permission Mode",definition:"Sicherheitsstufen (default, plan, power), die festlegen, wie oft Claude nach Erlaubnis fragen muss."},{term:"Sandbox",definition:"Eine isolierte Umgebung, in der Claude riskante Befehle sicher ausführen kann."}]}]};let u=localStorage.getItem("topic")||"gemini";const h={gemini:{title:"Gemini CLI",install:"npm install -g @google/gemini-cli",content:{lernpfad:A,module:x,kurse:T,codelabs:j,tutorials:D,codewiki:G}},"claude-spa":{title:"Claude Code (Basic)",install:"curl -fsSL https://claude.ai/install.sh | bash",content:{lernpfad:L,module:B,kurse:R,codelabs:$,tutorials:N,codewiki:F}}};window.switchTopic=function(e){if(e==="antigravity"){window.location.href="/Antigravity/index.html";return}u=e,localStorage.setItem("topic",e),document.body.setAttribute("data-topic",e),document.getElementById("sidebar-title").textContent=h[e].title,document.title=`${h[e].title} Learning Portal`,window.location.hash="home",f()};document.body.setAttribute("data-topic",u);window.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("topic-select");e&&(e.value=u),document.getElementById("sidebar-title").textContent=h[u].title});function m(){return h[u].content}function p(e,n="bash"){return`<div class="code-block">
+"hooks": { "SessionStart": [...] }`,lang:"json"},{step:"Parallel Agent Task",code:'claude "Use parallel agents to implement Feature A and B"',lang:"bash"}]}]},$={title:"🧪 Codelabs – Claude Code",intro:"Interaktive Praxis-Übungen direkt im Browser-Editor.",items:[{id:"lab-1",badge:"Anfänger",icon:"🎯",duration:"30 Min",title:"Codelab: Mein erster Claude-Edit",goal:"Lerne wie Claude Code Dateien liest, Änderungen vorschlägt und diese nach deiner Freigabe schreibt.",steps:[{title:"Datei erstellen",code:'echo "function add(a, b) { return a + b; }" > math.js',lang:"bash"},{title:"Claude beauftragen",code:'claude "Add documentation and input validation to math.js"',lang:"bash"},{title:"Resultat prüfen",code:"cat math.js",lang:"bash"}]},{id:"lab-2",badge:"Fortgeschritten",icon:"🔧",duration:"45 Min",title:"Codelab: Refactoring Legacy Code",goal:"Nutze Claude Code um ein altes Modul zu modernisieren und Tests hinzuzufügen.",steps:[{title:"Analyse",code:'claude "Explain the logic in legacy-module.js"',lang:"bash"},{title:"Modernisierung",code:'claude "Refactor legacy-module.js to use TypeScript and ES Modules"',lang:"bash"},{title:"Testing",code:'claude "Write unit tests for the refactored module and run them"',lang:"bash"}]}]},N={title:"📖 Tutorials – Claude Code",intro:"Best Practices, Tipps und vollständige Befehlsreferenz.",groups:[{title:"🧠 Mentale Modelle",items:[{title:"Vom Coder zum Architekten",icon:"🤝",content:"Betrachten Sie Claude Code als einen extrem schnellen Junior-Entwickler. Sie geben die Richtung vor, Claude führt aus.",tips:["Seien Sie spezifisch bei Anweisungen","Reviewen Sie jeden Diff sorgfältig","Nutzen Sie CLAUDE.md für dauerhafte Regeln"]}]},{title:"⌨️ CLI Referenz",items:[{title:"Alle Befehle auf einen Blick",icon:"⌨️",content:"Die wichtigsten Kommandozeilen-Befehle und ihre Wirkung.",table:[["Befehl","Beschreibung"],["claude","Interaktive REPL starten"],['claude -p "Prompt"',"Einmalige Antwort (Headless)"],["claude -c","Letzte Sitzung fortsetzen"],["claude commit","Geführter Commit-Dialog"],["claude mcp add","Neuen MCP Server hinzufügen"],["claude skill add","Neuen Skill hinzufügen"]]},{title:"Keyboard Shortcuts",icon:"⚡",content:"Produktivitäts-Shortcuts in der REPL.",table:[["Shortcut","Aktion"],["Ctrl+C","Abbrechen / Leeren"],["Ctrl+D","Beenden"],["Shift+Tab","Thinking Mode umschalten"],["↑ / ↓","Befehls-Historie"]]}]}]},F={title:"🧠 CodeWiki – Claude Code",intro:"Das ultimative Glossar für alle Begriffe rund um Claude Code.",categories:[{name:"Grundlagen",items:[{term:"Agentic Coding",definition:"Die Fähigkeit der KI, aktiv Code zu schreiben, Tests auszuführen und Shell-Befehle zu nutzen, um ein Ziel zu erreichen."},{term:"REPL",definition:"Read-Eval-Print-Loop: Die interaktive Kommandozeilen-Schnittstelle von Claude Code."},{term:"Diff",definition:"Der Unterschied zwischen dem aktuellen Code und der von Claude vorgeschlagenen Änderung."}]},{name:"Konzepte & Files",items:[{term:"CLAUDE.md",definition:"Die zentrale Konfigurationsdatei für projektweite Anweisungen, Coding-Styles und Architektur-Regeln."},{term:"settings.json",definition:"Globale Konfigurationsdatei für Benutzerpräferenzen wie Themes, Modelle und Berechtigungen."},{term:"MCP",definition:"Model Context Protocol – Ein offener Standard zur Anbindung externer Tools an KI-Modelle."}]},{name:"Security & Control",items:[{term:"Permission Mode",definition:"Sicherheitsstufen (default, plan, power), die festlegen, wie oft Claude nach Erlaubnis fragen muss."},{term:"Sandbox",definition:"Eine isolierte Umgebung, in der Claude riskante Befehle sicher ausführen kann."}]}]},K={title:"Google Antigravity Lernpfad",description:"Vom ersten Setup bis zur fortgeschrittenen Agent-Orchestrierung in der Google Cloud.",steps:[{id:1,title:"Google Cloud & SDK Setup",status:"completed"},{id:2,title:"Antigravity Agent Konzepte",status:"not-started"},{id:3,title:"Erweiterte Tools & Browser-Agent",status:"not-started"},{id:4,title:"MCP & Externe Integrationen",status:"not-started"},{id:5,title:"Sicherheit, Sandboxing & Enterprise",status:"not-started"}]},O=[{id:"m1",title:"Foundations & Setup",courses:[{id:"c101",title:"Installation des Google Cloud SDK",type:"course"},{id:"c102",title:"Navigation im Agent Manager",type:"course"},{id:"c103",title:"Authentifizierung & Rollen (IAM)",type:"course"}]},{id:"m2",title:"Agent Kernkonzepte",courses:[{id:"c201",title:"Agent Konfiguration: Vertex AI vs Gemini",type:"course"},{id:"c202",title:"Workspaces & Agent-Fokus",type:"course"},{id:"c203",title:"Agenten-Modi: Architekt vs. Implementierer",type:"course"}]},{id:"m3",title:"Automatisierung & Workflows",courses:[{id:"c301",title:"Eigene Rulesets definieren",type:"course"},{id:"c302",title:"Workflow-Orchestrierung mit Task Groups",type:"course"},{id:"c303",title:"Batch-Processing mit Antigravity CLI",type:"course"}]}],V=[{id:"k1",title:"Antigravity Fundamentals",level:"Beginner"},{id:"k2",title:"Advanced Orchestration",level:"Advanced"}],W=[{id:"cl1",title:"Workspace Setup",topic:"Google Antigravity Init",duration:"10 min"},{id:"cl2",title:"Automatisierte Code-Reviews",topic:"Agent Skills",duration:"25 min"},{id:"cl3",title:"Browser-Recording & Automation",topic:"Testing",duration:"40 min"},{id:"cl4",title:"Eigener MCP Server mit Go/Python",topic:"Integration",duration:"60 min"}],H=[{id:"t1",title:"Installation unter Windows/macOS",category:"Installation"},{id:"t2",title:"MCP Server in Google Cloud nutzen",category:"Advanced"},{id:"t3",title:"Sicherheits-Checkups & Strict Mode",category:"Security"},{id:"t4",title:"Debugging von Agenten-Output",category:"Quality"}],U=[{term:"Agent",definition:"Die Kern-KI-Entität, die Aufgaben im Workspace plant und ausführt."},{term:"Agent Manager",definition:"Die grafische Oberfläche zur Verwaltung mehrerer Workspaces und Agenten-Instanzen."},{term:"Artifacts",definition:"Spezielle Dokumententypen wie Implementierungspläne oder Walkthroughs, die vom Agenten generiert werden."},{term:"Browser Subagent",definition:"Ein spezialisierter Agent, der Webbrowsing, Dokumentationsrecherche und UI-Tests durchführen kann."},{term:"Context",definition:"Die Menge an Dateien und Informationen, die der Agent aktuell 'sieht' und für seine Entscheidungen nutzt."},{term:"Focus",definition:"Der Prozess, dem Agenten mitzuteilen, welche Teile des Code-Repositories für die aktuelle Aufgabe relevant sind."},{term:"MCP (Model Context Protocol)",definition:"Ein offener Standard, der es Agenten ermöglicht, sicher auf externe Datenquellen und Tools zuzugreifen."},{term:"Rules",definition:"Benutzerdefinierte Anweisungen (oft in einer .rules-Datei), die das Verhalten und den Coding-Stil des Agenten steuern."},{term:"Sandboxing",definition:"Die Ausführung von Code in einer isolierten Umgebung zum Schutz des Host-Systems."},{term:"Strict Mode",definition:"Ein Sicherheitsmodus, der explizite Berechtigungen für jede Dateimanipulation oder Shell-Aktion erfordert."},{term:"Task Group",definition:"Eine logische Gruppierung verwandter Aufgaben innerhalb eines Workspaces."}],_={title:"GitHub Copilot Lernpfad",description:"Meistere KI-gestützte Entwicklung von den Basics bis zu fortgeschrittenen Extensions und Agents.",steps:[{id:1,title:"Copilot in VS Code einrichten",status:"completed"},{id:2,title:"Effektives Prompting & Context",status:"not-started"},{id:3,title:"Copilot Chat & Slash Commands",status:"not-started"},{id:4,title:"Unit Tests & Refactoring mit KI",status:"not-started"},{id:5,title:"Copilot Extensions & Custom Agents",status:"not-started"}]},J=[{id:"m1",title:"Einstieg & Konfiguration",courses:[{id:"c101",title:"Installation & Authentifizierung",type:"course"},{id:"c102",title:"Die wichtigsten Shortcuts im Editor",type:"course"},{id:"c103",title:"Datenschutz & Telemetrie-Einstellungen",type:"course"}]},{id:"m2",title:"Copilot Chat & Interaktion",courses:[{id:"c201",title:"Slash Commands: /fix, /tests, /explain",type:"course"},{id:"c202",title:"@workspace: Projektweites Verständnis",type:"course"},{id:"c203",title:"Inline Chat vs. Sidepanel",type:"course"}]},{id:"m3",title:"Fortgeschrittene Workflows",courses:[{id:"c301",title:"Automatisierte Dokumentation",type:"course"},{id:"c302",title:"Legacy Code Refactoring",type:"course"},{id:"c303",title:"Copilot in der CLI nutzen",type:"course"}]}],Z=[{id:"k1",title:"Copilot for Power Users",level:"Intermediate"},{id:"k2",title:"AI-Driven Architecture",level:"Advanced"}],Y=[{id:"cl1",title:"Test-Driven Development mit Copilot",topic:"Testing",duration:"30 min"},{id:"cl2",title:"Regex & Algorithmen generieren",topic:"Logic",duration:"15 min"},{id:"cl3",title:"Migration von JS zu TypeScript",topic:"Migration",duration:"45 min"}],Q=[{id:"t1",title:"Copilot mit JetBrains IDEs nutzen",category:"IDE"},{id:"t2",title:"GitHub Copilot Enterprise Features",category:"Enterprise"},{id:"t3",title:"Custom Instructions für Copilot",category:"Customization"}],q=[{term:"Copilot Chat",definition:"Ein interaktives Chat-Interface direkt in der IDE für komplexe Fragen und Refactorings."},{term:"Ghost Text",definition:"Die hellgrauen Code-Vorschläge, die Copilot während des Tippens direkt im Editor anzeigt."},{term:"Slash Commands",definition:"Kurzbefehle wie /fix oder /explain, um gezielte KI-Aktionen im Chat auszulösen."},{term:"@workspace",definition:"Ein Agent im Chat, der Zugriff auf das gesamte Projekt hat, um kontextrelevante Antworten zu geben."},{term:"@terminal",definition:"Ein Agent, der hilft, passende Shell-Commands für das aktuelle Betriebssystem zu finden."},{term:"Prompt Engineering",definition:"Die Kunst, Anweisungen so zu formulieren, dass die KI das präziseste Ergebnis liefert."},{term:"Context Window",definition:"Die Menge an Code und Informationen, die Copilot gleichzeitig 'betrachten' kann."}],X={title:"Java Developer Lernpfad",description:"Vom ersten 'Hello World' bis zu komplexen Enterprise-Applikationen mit Java.",steps:[{id:1,title:"JDK Setup & Syntax Basics",status:"completed"},{id:2,title:"Objektorientierte Programmierung (OOP)",status:"not-started"},{id:3,title:"Collections Framework & Generics",status:"not-started"},{id:4,title:"Java Streams & Lambda Expressions",status:"not-started"},{id:5,title:"Concurrency & Multithreading",status:"not-started"}]},ee=[{id:"m1",title:"Java Fundamentals",courses:[{id:"c101",title:"Variablen, Datentypen & Operatoren",type:"course"},{id:"c102",title:"Kontrollstrukturen (If, Switch, Loops)",type:"course"},{id:"c103",title:"Methoden & Parameter-Passing",type:"course"}]},{id:"m2",title:"Object-Oriented Programming",courses:[{id:"c201",title:"Klassen, Objekte & Konstruktoren",type:"course"},{id:"c202",title:"Vererbung, Polymorphie & Interfaces",type:"course"},{id:"c203",title:"Abstrakte Klassen vs. Interfaces",type:"course"}]}],ne=[{id:"k1",title:"Modern Java (Java 17/21)",level:"Intermediate"},{id:"k2",title:"Design Patterns in Java",level:"Advanced"}],te=[{id:"cl1",title:"Banking System (OOP Übung)",topic:"Logic",duration:"45 min"},{id:"cl2",title:"Datenverarbeitung mit Streams",topic:"Functional",duration:"30 min"}],ie=[{id:"t1",title:"Maven vs. Gradle Guide",category:"Build Tools"},{id:"t2",title:"Unit Testing mit JUnit 5",category:"Testing"}],re=[{term:"JVM",definition:"Die Java Virtual Machine führt den kompilierten Bytecode plattformunabhängig aus."},{term:"Garbage Collector",definition:"Automatisches Speichermanagement, das nicht mehr benötigte Objekte löscht."},{term:"JDK",definition:"Das Java Development Kit enthält alle Tools zum Entwickeln (Compiler, JRE, Debugger)."},{term:"JRE",definition:"Die Java Runtime Environment wird benötigt, um Java-Programme auszuführen."}],se={title:"Fullstack JavaScript Lernpfad",description:"Vom ersten Script im Browser bis zu komplexen NodeJS-Backends und modernen Frontend-Frameworks.",steps:[{id:1,title:"Modern ES6+ Syntax",status:"completed"},{id:2,title:"Asynchrone Programmierung (Promises & Async/Await)",status:"not-started"},{id:3,title:"DOM-Manipulation & Browser-APIs",status:"not-started"},{id:4,title:"Node.js & Express Fundamentals",status:"not-started"},{id:5,title:"Einstieg in Frameworks (React/Vue/Angular)",status:"not-started"}]},oe=[{id:"m1",title:"ES6 & Modern Syntax",courses:[{id:"c101",title:"Let/Const, Arrow Functions, Template Literals",type:"course"},{id:"c102",title:"Destructuring, Spread & Rest-Operatoren",type:"course"},{id:"c103",title:"JS Modules (ESM vs CJS)",type:"course"}]},{id:"m2",title:"Asynchronität & APIs",courses:[{id:"c201",title:"Promises & Callbacks",type:"course"},{id:"c202",title:"Fetch API & Error Handling",type:"course"},{id:"c203",title:"Top-Level Await in modernen Browsern",type:"course"}]}],ae=[{id:"k1",title:"Mastering Node.js Backend",level:"Advanced"},{id:"k2",title:"TypeScript for JavaScript Developers",level:"Intermediate"}],le=[{id:"cl1",title:"Wetter-App mit Fetch API",topic:"Integration",duration:"20 min"},{id:"cl2",title:"Build your own Todo SPA",topic:"DOM",duration:"30 min"}],de=[{id:"t1",title:"NPM vs. PNPM vs. Bun",category:"Package Manager"},{id:"t2",title:"Vite: Der moderne Build-Toolchain",category:"Build Tools"}],ce=[{term:"Hoisting",definition:"Variablen- und Funktionsdeklarationen werden während des Compiling-Prozesses nach oben verschoben."},{term:"Closure",definition:"Eine Funktion, die Zugriff auf Variablen in ihrem äußeren Gültigkeitsbereich behält, auch wenn dieser verlassen wurde."},{term:"Prototype",definition:"Der Mechanismus, über den JavaScript-Objekte Eigenschaften voneinander erben."},{term:"Event Loop",definition:"Das Herzstück von JS, das für die Verwaltung von asynchronen Callbacks verantwortlich ist."}],ue={title:"C# Developer Lernpfad",description:"Vom ersten Programm in der Konsole bis zur professionellen .NET-Software-Architektur.",steps:[{id:1,title:"C# Syntax & .NET Core Basics",status:"completed"},{id:2,title:"Objektorientierung in C#",status:"not-started"},{id:3,title:"LINQ & Datenabfragen",status:"not-started"},{id:4,title:"Asynchrone Programmierung (Async/Await)",status:"not-started"},{id:5,title:"Advanced .NET: Generics & Reflection",status:"not-started"}]},ge=[{id:"m1",title:"Language Basics",courses:[{id:"c101",title:"Variablen, Datentypen & Structs",type:"course"},{id:"c102",title:"Kontrollstrukturen & Loops",type:"course"},{id:"c103",title:"Fehlerbehandlung mit Try-Catch",type:"course"}]},{id:"m2",title:"OOP & LINQ",courses:[{id:"c201",title:"Klassen, Interfaces & Records",type:"course"},{id:"c202",title:"Einführung in LINQ: Where, Select, Join",type:"course"},{id:"c203",title:"Delegates & Events",type:"course"}]}],me=[{id:"k1",title:"Mastering C# 12 & .NET 8",level:"Intermediate"},{id:"k2",title:"Architecture Patterns in .NET",level:"Advanced"}],he=[{id:"cl1",title:"Eigene LINQ Extension Methods",topic:"Logic",duration:"25 min"},{id:"cl2",title:"Multithreading mit Tasks & PLINQ",topic:"Performance",duration:"40 min"}],pe=[{id:"t1",title:"NuGet Paketverwaltung Guide",category:"Tools"},{id:"t2",title:"Visual Studio vs. VS Code für .NET",category:"Setup"}],fe=[{term:"CLR (Common Language Runtime)",definition:"Die Laufzeitumgebung von .NET, die den Code ausführt und Dienste wie Speicherverwaltung anbietet."},{term:"MSIL (Intermediate Language)",definition:"C# wird zuerst in diese Zwischensprache kompiliert, die dann von der CLR in Maschinencode übersetzt wird."},{term:"LINQ",definition:"Language Integrated Query erlaubt typsichere Abfragen auf verschiedenen Datenquellen direkt in C#."},{term:"Async/Await",definition:"Schlüsselwörter zur Implementierung von asynchronem Code, ohne den UI-Thread zu blockieren."}],be={title:"ASP.NET Core Web Developer Lernpfad",description:"Entwickle moderne, hochperformante Web-Applikationen und APIs mit dem .NET Framework.",steps:[{id:1,title:"ASP.NET Core Fundamentals & Middleware",status:"completed"},{id:2,title:"Dependency Injection (DI) & Services",status:"not-started"},{id:3,title:"Entity Framework Core & Datenbanken",status:"not-started"},{id:4,title:"RESTful APIs mit ASP.NET Core",status:"not-started"},{id:5,title:"Modernes Frontend: Blazor vs. Razor Pages",status:"not-started"}]},ke=[{id:"m1",title:"Web App Architecture",courses:[{id:"c101",title:"Das Startup-System: Program.cs",type:"course"},{id:"c102",title:"Die Middleware-Pipeline verstehen",type:"course"},{id:"c103",title:"Dependency Injection Design Patterns",type:"course"}]},{id:"m2",title:"Data & Persistence",courses:[{id:"c201",title:"EF Core: Migrations & DbContext",type:"course"},{id:"c202",title:"Repository & Unit of Work Pattern",type:"course"},{id:"c203",title:"Performance-Tuning in SQL Abfragen",type:"course"}]}],ve=[{id:"k1",title:"Clean Architecture in .NET",level:"Advanced"},{id:"k2",title:"Securing ASP.NET Core Apps",level:"Intermediate"}],Se=[{id:"cl1",title:"Eigene Middleware für Logging",topic:"Pipeline",duration:"15 min"},{id:"cl2",title:"Web API mit JWT Auth",topic:"Security",duration:"45 min"}],we=[{id:"t1",title:"Deployment auf Azure App Service",category:"DevOps"},{id:"t2",title:"Dockerizing .NET Applications",category:"Containers"}],Ie=[{term:"Kestrel",definition:"Der plattformunabhängige Webserver für ASP.NET Core."},{term:"Middleware",definition:"Softwarekomponenten, die in der App-Pipeline zur Verarbeitung von Requests und Responses eingesetzt werden."},{term:"Dependency Injection",definition:"Ein Standard-Mechanismus in ASP.NET Core zur Entkopplung von Komponenten."},{term:"Razor",definition:"Eine Markup-Syntax zur serverseitigen Generierung von HTML-Code."}],Ce={title:"Spring Boot Developer Lernpfad",description:"Meistere das populärste Java-Framework für Cloud-Native und Microservices-Architekturen.",steps:[{id:1,title:"Spring Core & Inversion of Control (IoC)",status:"completed"},{id:2,title:"Spring Boot Auto-Konfiguration & Starters",status:"not-started"},{id:3,title:"Datenzugriff mit Spring Data JPA",status:"not-started"},{id:4,title:"RESTful Web Services mit Spring MVC",status:"not-started"},{id:5,title:"Cloud-Ready: Spring Security & Microservices",status:"not-started"}]},ye=[{id:"m1",title:"Spring Core Concepts",courses:[{id:"c101",title:"Beans, Scopes & Dependency Injection",type:"course"},{id:"c102",title:"ApplicationContext & Profiles",type:"course"},{id:"c103",title:"Annotation-driven Configuration",type:"course"}]},{id:"m2",title:"Web & Data",courses:[{id:"c201",title:"Spring Web: Controller & Request Mapping",type:"course"},{id:"c202",title:"Spring Data JPA: Repositories & Entities",type:"course"},{id:"c203",title:"Validation & Exception Handling",type:"course"}]}],Ae=[{id:"k1",title:"Spring Cloud for Microservices",level:"Advanced"},{id:"k2",title:"Reactive Programming with Spring WebFlux",level:"Intermediate"}],Ee=[{id:"cl1",title:"REST API mit H2 Database",topic:"Backend",duration:"30 min"},{id:"cl2",title:"Spring Boot Custom Actuator",topic:"Operations",duration:"20 min"}],ze=[{id:"t1",title:"Spring Initializr: Der perfekte Start",category:"Setup"},{id:"t2",title:"Spring Boot mit Docker & Kubernetes",category:"Cloud"}],Pe=[{term:"IoC (Inversion of Control)",definition:"Das Entwurfsmuster, bei dem die Kontrolle über das Objektmanagement an das Framework delegiert wird."},{term:"Bean",definition:"Ein von Spring verwaltetes Objekt innerhalb des ApplicationContext."},{term:"Spring Boot Starter",definition:"Vorkonfigurierte Abhängigkeiten für gängige Anwendungsfälle (z.B. starter-web)."},{term:"Actuator",definition:"Ein Modul zur Überwachung und Verwaltung von Spring Boot Anwendungen (Health, Metrics)."}],Me={title:"AI Toolkit Mastery Lernpfad",description:"Lerne, wie du lokale KI-Modelle (SLMs) direkt in VS Code ausführst, testest und in deine Projekte integrierst.",steps:[{id:1,title:"AI Toolkit Installation & Setup",status:"completed"},{id:2,title:"Model Catalog & Lokales Downloaden",status:"not-started"},{id:3,title:"Model Playground: Prompts lokal testen",status:"not-started"},{id:4,title:"Feintuning & Optimierung von Modellen",status:"not-started"},{id:5,title:"Integration in Applikationen (REST API & SDKs)",status:"not-started"}]},De=[{id:"m1",title:"Einstieg & Hardware",courses:[{id:"c101",title:"Installation der VS Code Extension",type:"course"},{id:"c102",title:"GPU-Beschleunigung einrichten (CUDA/DirectML)",type:"course"},{id:"c103",title:"Unterschiede: Cloud vs. Local LLMs",type:"course"}]},{id:"m2",title:"Modell-Management",courses:[{id:"c201",title:"Einführung in Phi-3, Llama 3 & Mistral",type:"course"},{id:"c202",title:"Modelle finden im Hugging Face Hub",type:"course"},{id:"c203",title:"Quantisierung verstehen (Q4_K_M vs FP16)",type:"course"}]},{id:"m3",title:"Entwicklung & Integration",courses:[{id:"c301",title:"Der lokale REST-Server des Toolkits",type:"course"},{id:"c302",title:"Nutzen von OpenAI-kompatiblen APIs",type:"course"},{id:"c303",title:"AI Toolkit in Python & C# nutzen",type:"course"}]}],Te=[{id:"k1",title:"SLM Deployment on Edge Devices",level:"Advanced"},{id:"k2",title:"Optimizing Prompts for Small Language Models",level:"Intermediate"}],xe=[{id:"cl1",title:"Chat-App mit lokalem Phi-3 Modell",topic:"Integration",duration:"25 min"},{id:"cl2",title:"Performance-Benchmarking verschiedener Modelle",topic:"Performance",duration:"20 min"},{id:"cl3",title:"RAG-System (Retrieval Augmented Generation) lokal",topic:"Architecture",duration:"50 min"}],Ge=[{id:"t1",title:"Hardware-Anforderungen für lokale KI",category:"Hardware"},{id:"t2",title:"Sicherheit: KI ohne Internetverbindung",category:"Security"},{id:"t3",title:"Modell-Konvertierung nach ONNX",category:"Optimization"}],je=[{term:"SLM (Small Language Model)",definition:"KI-Modelle mit weniger Parametern (z.B. Phi-3), die effizient auf lokaler Hardware laufen."},{term:"Quantisierung",definition:"Reduzierung der Genauigkeit von Modellgewichten (z.B. von 16-Bit auf 4-Bit), um Speicherplatz und Rechenpower zu sparen."},{term:"Hugging Face",definition:"Die größte Plattform für Open-Source KI-Modelle und Datensätze."},{term:"Local Inference",definition:"Das Ausführen von KI-Berechnungen direkt auf dem eigenen PC statt in der Cloud."},{term:"ONNX Runtime",definition:"Eine performante Engine von Microsoft zum Ausführen von optimierten KI-Modellen."},{term:"DirectML",definition:"Eine DirectX-basierte API zur Beschleunigung von KI auf Windows-Hardware."},{term:"Model Playground",definition:"Ein interaktives Interface im AI Toolkit zum schnellen Testen von Prompts und Modell-Parametern."}],Le={title:"📍 Lernpfad – Google AI Studio",intro:"Der schnellste Weg von der Idee zum ersten Gemini-API Call. Lerne, wie du Prompts perfektionierst und in Code verwandelst.",steps:[{num:1,title:"Einstieg & Interface",desc:"Melde dich mit deinem Google-Konto an und erkunde das Interface. Erfahre, wo du Modelle wählst und Einstellungen vornimmst.",youtube:"9xE2DTxGvTY",code:`# Öffne im Browser:
+https://aistudio.google.com/`,lang:"text",chips:[{label:"AI Studio Home",url:"https://aistudio.google.com/"}]},{num:2,title:"Dein erster Chat-Prompt",desc:"Interagiere direkt mit Gemini 1.5 Pro. Nutze System Instructions, um das Verhalten der KI festzulegen.",code:`System Instruction: "Du bist ein erfahrener Cloud-Architekt."
+Prompt: "Entwirf eine skalierbare Architektur für eine E-Commerce App."`,lang:"text"},{num:3,title:"Strukturierte Daten & JSON",desc:"Lerne, wie du Gemini dazu bringst, Daten in einem exakten JSON-Format zurückzugeben.",code:`Response MIME type: application/json
+Prompt: "Extrahiere Name und Preis aus diesem Text: Das iPhone 15 kostet 999 Euro."`,lang:"text"},{num:4,title:"Multimodalität nutzen",desc:"Lade Bilder, PDFs oder Videos hoch und stelle Fragen dazu. Gemini analysiert den visuellen Kontext.",code:`# Beispiel: Lade ein Diagramm hoch
+Prompt: "Erkläre den Datenfluss in diesem Diagramm."`,lang:"text"},{num:5,title:"Vom Prompt zum Code",desc:"Exportiere deinen fertigen Prompt als Python, JavaScript oder cURL Code-Snippet.",code:`// Beispiel Node.js Export
+const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });`,lang:"javascript"}]},Be={title:"📦 Module – Google AI Studio",intro:"Tiefe Einblicke in die Funktionen von AI Studio.",groups:[{title:"⚙️ Core Features",items:[{title:"System Instructions",icon:"🎭",content:"Lege fest, wer Gemini ist. System Instructions geben den Ton und die Regeln für die gesamte Konversation vor.",tips:["Sei spezifisch","Definiere das Ziel","Gib Formatvorgaben"]},{title:"Model Settings",icon:"🌡️",content:"Temperature steuert die Kreativität. 0.0 ist ideal für Fakten, 1.0 für kreatives Schreiben.",table:[["Parameter","Bereich","Effekt"],["Temperature","0.0 - 2.0","Höher = Kreativer"],["Top-P","0.0 - 1.0","Wahrscheinlichkeitsfilter"],["Top-K","1 - 40","Anzahl der Wortkandidaten"]]}]},{title:"🚀 Fortgeschritten",items:[{title:"Agent Skills & Workflows",icon:"🤖",content:"Nutze spezialisierte Agenten und automatisierte Workflows, um komplexe Aufgaben effizient zu lösen.",youtube:"STRApeg2pcA",tips:["Definiere klare Rollen","Nutze iterative Prompts","Automatisiere Routineaufgaben"]},{title:"Tuned Models",icon:"🎯",content:"Trainiere Gemini auf deinen eigenen Daten (CSV/Google Sheets), um spezifische Stile oder Fachwissen zu erlernen.",code:"# Erfordert Datensatz mit Input/Output Paaren",lang:"text"},{title:"Safety Settings",icon:"🛡️",content:"Konfiguriere Filter für Hassrede, Belästigung und sexuell explizite Inhalte.",tips:["Block None","Block Few","Block Some","Block Most"]}]}]},Re={title:"🎓 Kurse – AI Studio Mastery",intro:"Lerne in strukturierten Einheiten.",items:[{id:"intro-aistudio",title:"AI Studio Quickstart",icon:"✨",badge:"Anfänger",duration:"15 min",description:"Der perfekte Einstieg in die Welt von Google AI Studio.",lernziele:["Interface verstehen","Ersten API Key generieren","Chat-Modus nutzen"],content:[{step:"Login auf aistudio.google.com",code:"Nutze dein Google Konto."},{step:'Erstelle einen "New Prompt"',code:"Klicke auf Create New -> Chat Prompt."}]},{id:"json-mode",title:"JSON Masterclass",icon:"📊",badge:"Fortgeschritten",duration:"30 min",description:"Extrahiere strukturierte Daten mit 100% Zuverlässigkeit.",lernziele:["JSON Schema definieren","MIME-Types nutzen","Fehlerbehandlung"],content:[{step:"MIME Type umstellen",code:"Wähle im rechten Panel application/json."},{step:"Schema vorgeben",code:"Nutze Few-Shot Beispiele für das Format."}]}]},$e={title:"🧪 Codelabs – Hands-on Praxis",intro:"Baue echte Projekte mit AI Studio.",items:[{id:"image-analyzer",title:"Bild-Analysator App",icon:"📸",badge:"Praxis",duration:"20 min",goal:"Eine App bauen, die Objekte in Bildern erkennt und beschreibt.",steps:[{title:"Modell wählen",code:"Nutze Gemini 1.5 Flash für schnelle Bildanalyse.",lang:"text"},{title:"Prompt testen",code:'Prompt: "Was siehst du auf diesem Bild? Antworte kurz."',lang:"text"},{title:"Code exportieren",code:'Klicke auf "Get Code" und kopiere das JS-Snippet.',lang:"javascript"}]}]},Ne={title:"📖 Tutorials & Referenz",intro:"Best Practices für die tägliche Arbeit.",groups:[{title:"API Management",items:[{title:"API Keys generieren",icon:"🔑",content:"So erstellst du einen Key für deine Projekte.",tips:["Keys niemals in GitHub pushen","Nutze .env Dateien"]}]}]},Fe={title:"📚 CodeWiki – AI Studio Begriffe",intro:"Alle wichtigen Fachbegriffe erklärt.",categories:[{name:"Grundlagen",items:[{term:"System Instruction",definition:"Grundlegende Verhaltensregeln für das Modell."},{term:"Token",definition:"Die kleinste Einheit der Textverarbeitung."},{term:"API Key",definition:"Dein persönlicher Zugangsschlüssel für die Gemini API."}]}]},Ke=`
+<div class="impressum-container animate-fade">
+    <h1>Impressum</h1>
+    <section>
+        <h2>Angaben gemäß § 5 TMG</h2>
+        <p>
+            Thorsten Klöhn<br>
+            Gerhardstraße 2<br>
+            22926 Ahrensburg
+        </p>
+    </section>
+
+    <section>
+        <h2>Vertreten durch:</h2>
+        <p>Thorsten Klöhn</p>
+    </section>
+
+    <section>
+        <h2>Kontakt:</h2>
+        <p>
+            Telefon: 04102-2 17 40 07<br>
+            E-Mail: thorstenkloehn@gmail.com
+        </p>
+    </section>
+
+    <section>
+        <h2>Haftungsausschluss:</h2>
+        <h3>Haftung für Inhalte</h3>
+        <p>
+            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die
+            Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir
+            jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7
+            Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
+            Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+            Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
+            gespeicherte fremde Informationen zu überwachen oder nach Umständen zu
+            forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+            Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
+            Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
+            Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der
+            Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von
+            entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend
+            entfernen.
+        </p>
+
+        <h3>Haftung für Links</h3>
+        <p>
+            Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
+            Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden
+            Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten
+            Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten
+            verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der
+            Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte
+            waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente
+            inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete
+            Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden
+            von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+        </p>
+
+        <h3>Urheberrecht</h3>
+        <p>
+            Dieses Werk ist lizenziert unter einer <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Namensnennung
+            4.0 International Lizenz</a>. Soweit die Inhalte
+            auf dieser Seite nicht vom Betreiber erstellt wurden, werden die
+            Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als
+            solche gekennzeichnet. Sollten Sie trotzdem auf eine
+            Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
+            entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden
+            wir derartige Inhalte umgehend entfernen.
+        </p>
+
+        <h3>Datenschutz</h3>
+        <p>
+            Die Nutzung unserer Webseite ist in der Regel ohne Angabe
+            personenbezogener Daten möglich. Soweit auf unseren Seiten
+            personenbezogene Daten (beispielsweise Name, Anschrift oder
+            eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf
+            freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche
+            Zustimmung nicht an Dritte weitergegeben.
+        </p>
+        <p>
+            Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei
+            der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein
+            lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
+            möglich.
+        </p>
+        <p>
+            Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten
+            Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich
+            angeforderter Werbung und Informationsmaterialien wird hiermit
+            ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich
+            ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von
+            Werbeinformationen, etwa durch Spam-Mails, vor.
+        </p>
+    </section>
+
+    <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-secondary);">
+        Impressum vom <a href="https://www.impressum-generator.de" target="_blank" rel="noopener">Impressum Generator</a>
+        der <a href="https://www.kanzlei-hasselbach.de" target="_blank" rel="noopener">Kanzlei Hasselbach</a>
+    </p>
+</div>
+`,Oe=`
+<div class="impressum-container animate-fade">
+    <h1>Datenschutzerklärung</h1>
+
+    <p>Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
+    <ul>
+        <li>Thorsten Klöhn</li>
+        <li>Gerhardstraße 2</li>
+        <li>22926 Ahrensburg</li>
+        <li>Telefon: 04102-2 17 40 07</li>
+        <li>E-Mail: <a href="mailto:thorstenkloehn@gmail.com">thorstenkloehn@gmail.com</a></li>
+    </ul>
+
+    <section>
+        <h2>Ihre Betroffenenrechte</h2>
+        <p>Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:</p>
+        <ul>
+            <li>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),</li>
+            <li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</li>
+            <li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),</li>
+            <li>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),</li>
+            <li>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und</li>
+            <li>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).</li>
+        </ul>
+        <p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+        <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</p>
+    </section>
+
+    <section>
+        <h2>Eingebettete YouTube-Videos</h2>
+        <h3>Art und Zweck der Verarbeitung:</h3>
+        <p>Auf einigen unserer Webseiten betten wir YouTube-Videos ein. Betreiber der entsprechenden Plugins ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA (nachfolgend „YouTube“). Wenn Sie eine Seite mit dem YouTube-Plugin besuchen, wird eine Verbindung zu Servern von YouTube hergestellt. Dabei wird YouTube mitgeteilt, welche Seiten Sie besuchen. Wenn Sie in Ihrem YouTube-Account eingeloggt sind, kann YouTube Ihr Surfverhalten Ihnen persönlich zuzuordnen. Dies verhindern Sie, indem Sie sich vorher aus Ihrem YouTube-Account ausloggen.</p>
+        <p>Wird ein YouTube-Video gestartet, setzt der Anbieter Cookies ein, die Hinweise über das Nutzerverhalten sammeln.</p>
+        
+        <h3>Rechtsgrundlage:</h3>
+        <p>Rechtsgrundlage für die Einbindung von YouTube und dem damit verbundenen Datentransfer zu Google ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
+
+        <h3>Empfänger:</h3>
+        <p>Der Aufruf von YouTube löst automatisch eine Verbindung zu Google aus.</p>
+
+        <h3>Speicherdauer und Widerruf der Einwilligung:</h3>
+        <p>Wer das Speichern von Cookies für das Google-Ad-Programm deaktiviert hat, wird auch beim Anschauen von YouTube-Videos mit keinen solchen Cookies rechnen müssen. YouTube legt aber auch in anderen Cookies nicht-personenbezogene Nutzungsinformationen ab. Möchten Sie dies verhindern, so müssen Sie das Speichern von Cookies im Browser blockieren.</p>
+
+        <h3>Drittlandtransfer:</h3>
+        <p>Google verarbeitet Ihre Daten in den USA und hat sich dem EU-US Privacy Shield unterworfen.</p>
+
+        <h3>Bereitstellung vorgeschrieben oder erforderlich:</h3>
+        <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Sofern Sie den Zugriff unterbinden, kann es hierdurch zu Funktionseinschränkungen auf der Website kommen.</p>
+    </section>
+
+    <section>
+        <h2>Änderung unserer Datenschutzbestimmungen</h2>
+        <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+    </section>
+
+    <section>
+        <h2>Fragen an den Datenschutzbeauftragten</h2>
+        <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation.</p>
+    </section>
+
+    <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-secondary);">
+        Die Datenschutzerklärung wurde mit dem Datenschutzerklärungs-Generator der activeMind AG erstellt.
+    </p>
+</div>
+`;let u=localStorage.getItem("topic")||"gemini";const h={gemini:{title:"Gemini CLI",install:"npm install -g @google/gemini-cli",content:{lernpfad:M,module:D,kurse:T,codelabs:x,tutorials:G,codewiki:j}},"claude-spa":{title:"Claude Code (Basic)",install:"curl -fsSL https://claude.ai/install.sh | bash",content:{lernpfad:L,module:B,kurse:R,codelabs:$,tutorials:N,codewiki:F}},antigravity:{title:"Google Antigravity",install:"https://antigravity.google/",content:{lernpfad:K,module:O,kurse:V,codelabs:W,tutorials:H,codewiki:U}},copilot:{title:"GitHub Copilot",install:"https://github.com/features/copilot",content:{lernpfad:_,module:J,kurse:Z,codelabs:Y,tutorials:Q,codewiki:q}},java:{title:"Java Development",install:"https://www.oracle.com/java/technologies/downloads/",content:{lernpfad:X,module:ee,kurse:ne,codelabs:te,tutorials:ie,codewiki:re}},javascript:{title:"JavaScript Fullstack",install:"https://nodejs.org/",content:{lernpfad:se,module:oe,kurse:ae,codelabs:le,tutorials:de,codewiki:ce}},csharp:{title:"C# Programming",install:"https://dotnet.microsoft.com/download/csharp",content:{lernpfad:ue,module:ge,kurse:me,codelabs:he,tutorials:pe,codewiki:fe}},aspnetcore:{title:"ASP.NET Core",install:"dotnet new webapi",content:{lernpfad:be,module:ke,kurse:ve,codelabs:Se,tutorials:we,codewiki:Ie}},springboot:{title:"Spring Boot",install:"https://start.spring.io/",content:{lernpfad:Ce,module:ye,kurse:Ae,codelabs:Ee,tutorials:ze,codewiki:Pe}},aitoolkit:{title:"AI Toolkit for VS Code",install:"code --install-extension ms-windows-ai-studio.windows-ai-studio",content:{lernpfad:Me,module:De,kurse:Te,codelabs:xe,tutorials:Ge,codewiki:je}},aistudio:{title:"Google AI Studio",install:"https://aistudio.google.com/",content:{lernpfad:Le,module:Be,kurse:Re,codelabs:$e,tutorials:Ne,codewiki:Fe}}};window.switchTopic=function(e){u=e,localStorage.setItem("topic",e),document.body.setAttribute("data-topic",e),document.getElementById("sidebar-title").textContent=h[e].title,document.title=`${h[e].title} Learning Portal`,window.location.hash="home",p()};document.body.setAttribute("data-topic",u);window.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("topic-select");e&&(e.value=u),document.getElementById("sidebar-title").textContent=h[u].title});function g(){return h[u].content}function f(e,t="bash"){return`<div class="code-block">
         <div class="code-header">
-            <span class="code-lang">${n}</span>
+            <span class="code-lang">${t}</span>
             <div class="code-actions">
                 <button class="try-btn" onclick="injectToEditor(this)">⚡ Probieren</button>
                 <button class="copy-btn" onclick="copyCode(this)">📋 Kopieren</button>
             </div>
         </div>
-        <pre><code class="lang-${n}">${K(e)}</code></pre>
-    </div>`}function K(e){return e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function O(e=[]){return e.map(n=>`<a class="chip" href="${n.url}" target="_blank" rel="noopener">${n.label}</a>`).join("")}function k(e=[]){return`<ul class="tip-list">${e.map(n=>`<li>✅ ${n}</li>`).join("")}</ul>`}function v(e=[]){const[n,...s]=e,i=n.map(r=>`<th>${r}</th>`).join(""),t=s.map(r=>`<tr>${r.map(o=>`<td>${o}</td>`).join("")}</tr>`).join("");return`<table class="info-table"><thead><tr>${i}</tr></thead><tbody>${t}</tbody></table>`}function _(){const e=m().lernpfad,n=e.steps.map(s=>`
+        <pre><code class="lang-${t}">${Ve(e)}</code></pre>
+    </div>`}function Ve(e){return e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function We(e=[]){return e.map(t=>`<a class="chip" href="${t.url}" target="_blank" rel="noopener">${t.label}</a>`).join("")}function k(e=[]){return`<ul class="tip-list">${e.map(t=>`<li>✅ ${t}</li>`).join("")}</ul>`}function v(e=[]){const[t,...r]=e,i=t.map(s=>`<th>${s}</th>`).join(""),n=r.map(s=>`<tr>${s.map(o=>`<td>${o}</td>`).join("")}</tr>`).join("");return`<table class="info-table"><thead><tr>${i}</tr></thead><tbody>${n}</tbody></table>`}function He(){const e=g().lernpfad,t=e.steps.map(r=>`
         <div class="path-step">
-            <div class="step-num">${s.num}</div>
+            <div class="step-num">${r.num}</div>
             <div class="step-body">
-                <h3>${s.title}</h3>
-                <p>${s.desc}</p>
-                ${s.code?p(s.code,s.lang):""}
-                ${O(s.chips)}
+                <h3>${r.title}</h3>
+                <p>${r.desc}</p>
+                ${r.code?f(r.code,r.lang):""}
+                ${r.youtube?renderYouTube(r.youtube):""}
+                ${We(r.chips)}
             </div>
         </div>`).join("");return`<section class="animate-fade">
         <h1>${e.title}</h1>
         <p class="section-desc">${e.intro}</p>
-        <div class="path-list">${n}</div>
-    </section>`}function H(){const e=m().module,n=e.groups.map(s=>{const i=s.items.map(t=>`
+        <div class="path-list">${t}</div>
+    </section>`}function Ue(){const e=g().module,t=e.groups.map(r=>{const i=r.items.map(n=>`
             <div class="module-card">
-                <div class="module-icon">${t.icon}</div>
+                <div class="module-icon">${n.icon}</div>
                 <div class="module-body">
-                    <h3>${t.title}</h3>
-                    <p>${t.content}</p>
-                    ${t.code?p(t.code,t.lang):""}
-                    ${t.tips?k(t.tips):""}
-                    ${t.table?v(t.table):""}
+                    <h3>${n.title}</h3>
+                    <p>${n.content}</p>
+                    ${n.code?f(n.code,n.lang):""}
+                    ${n.youtube?renderYouTube(n.youtube):""}
+                    ${n.tips?k(n.tips):""}
+                    ${n.table?v(n.table):""}
                 </div>
-            </div>`).join("");return`<h2>${s.title}</h2><div class="module-list">${i}</div>`}).join("");return`<section class="animate-fade">
+            </div>`).join("");return`<h2>${r.title}</h2><div class="module-list">${i}</div>`}).join("");return`<section class="animate-fade">
         <h1>${e.title}</h1>
         <p class="section-desc">${e.intro}</p>
-        ${n}
-    </section>`}function S(e=null){const n=m().kurse;if(e){const i=n.items.find(r=>r.id===e);if(!i)return S();const t=i.content.map(r=>`
+        ${t}
+    </section>`}function S(e=null){const t=g().kurse;if(e){const i=t.items.find(s=>s.id===e);if(!i)return S();const n=i.content.map(s=>`
             <div class="tutorial-step">
                 <div class="step-label">Schritt</div>
                 <div class="step-content-body">
-                    <h4>${r.step}</h4>
-                    ${p(r.code,r.lang)}
+                    <h4>${s.step}</h4>
+                    ${s.code?f(s.code,s.lang):""}
+                    ${s.youtube?renderYouTube(s.youtube):""}
                 </div>
             </div>`).join("");return`<section class="animate-fade">
             <button class="back-btn" onclick="navigate('kurse')">← Zurück zu Kursen</button>
@@ -1090,12 +1264,12 @@ Prüfe {{ $1 }} auf Vulnerabilities.`,lang:"markdown"},{step:"CI Hook Setup",cod
             <p class="section-desc">${i.description}</p>
             <div class="lernziele">
                 <h3>🎯 Lernziele</h3>
-                <ul>${i.lernziele.map(r=>`<li>${r}</li>`).join("")}</ul>
+                <ul>${i.lernziele.map(s=>`<li>${s}</li>`).join("")}</ul>
             </div>
             <h3 style="margin-top:2rem;">📋 Schritt für Schritt</h3>
-            <div class="tutorial-steps">${t}</div>
-            ${C("kurse",e,n.items)}
-        </section>`}const s=n.items.map(i=>`
+            <div class="tutorial-steps">${n}</div>
+            ${w("kurse",e,t.items)}
+        </section>`}const r=t.items.map(i=>`
         <div class="card kurs-card" onclick="navigate('kurse', '${i.id}')">
             <span class="badge">${i.badge}</span>
             <div class="kurs-card-icon">${i.icon}</div>
@@ -1103,31 +1277,31 @@ Prüfe {{ $1 }} auf Vulnerabilities.`,lang:"markdown"},{step:"CI Hook Setup",cod
             <p>${i.description}</p>
             <span class="duration">⏱️ ${i.duration}</span>
         </div>`).join("");return`<section class="animate-fade">
-        <h1>${n.title}</h1>
-        <p class="section-desc">${n.intro}</p>
-        <div class="content-grid">${s}</div>
-    </section>`}function C(e,n,s){const i=s.findIndex(o=>o.id===n),t=s[i-1],r=s[i+1];return`<div class="step-nav">
-        ${t?`<button class="nav-btn prev" onclick="navigate('${e}', '${t.id}')">← ${t.title}</button>`:"<div></div>"}
-        ${r?`<button class="nav-btn next" onclick="navigate('${e}', '${r.id}')">${r.title} →</button>`:"<div></div>"}
-    </div>`}function E(e=null){const n=m().codelabs;if(e){const i=n.items.find(r=>r.id===e);if(!i)return E();const t=i.steps.map((r,o)=>`
+        <h1>${t.title}</h1>
+        <p class="section-desc">${t.intro}</p>
+        <div class="content-grid">${r}</div>
+    </section>`}function w(e,t,r){const i=r.findIndex(o=>o.id===t),n=r[i-1],s=r[i+1];return`<div class="step-nav">
+        ${n?`<button class="nav-btn prev" onclick="navigate('${e}', '${n.id}')">← ${n.title}</button>`:"<div></div>"}
+        ${s?`<button class="nav-btn next" onclick="navigate('${e}', '${s.id}')">${s.title} →</button>`:"<div></div>"}
+    </div>`}function I(e=null){const t=g().codelabs;if(e){const i=t.items.find(s=>s.id===e);if(!i)return I();const n=i.steps.map((s,o)=>`
             <div class="lab-step">
                 <div class="lab-step-num">${o+1}</div>
                 <div class="lab-step-body">
-                    <h4>${r.title}</h4>
-                    ${p(r.code,r.lang)}
+                    <h4>${s.title}</h4>
+                    ${f(s.code,s.lang)}
                 </div>
             </div>`).join("");return`<section class="animate-fade">
             <button class="back-btn" onclick="navigate('codelabs')">← Zurück zu Codelabs</button>
             <div class="kurs-badge-row"><span class="badge">${i.badge}</span><span class="duration">⏱️ ${i.duration}</span></div>
             <h1>${i.icon} ${i.title}</h1>
             <div class="goal-box">🎯 <strong>Ziel:</strong> ${i.goal}</div>
-            <div class="lab-steps">${t}</div>
+            <div class="lab-steps">${n}</div>
             <div id="editor-wrapper" style="margin-top:3rem;">
                 <h2>🖥️ Playground – Probier es aus</h2>
                 <div id="editor-container"></div>
             </div>
-            ${C("codelabs",e,n.items)}
-        </section>`}const s=n.items.map(i=>`
+            ${w("codelabs",e,t.items)}
+        </section>`}const r=t.items.map(i=>`
         <div class="card" onclick="navigate('codelabs', '${i.id}')">
             <span class="badge">${i.badge}</span>
             <div class="kurs-card-icon">${i.icon}</div>
@@ -1135,36 +1309,37 @@ Prüfe {{ $1 }} auf Vulnerabilities.`,lang:"markdown"},{step:"CI Hook Setup",cod
             <p style="color:var(--text-secondary);margin-top:.5rem;">${i.goal}</p>
             <span class="duration">⏱️ ${i.duration}</span>
         </div>`).join("");return`<section class="animate-fade">
-        <h1>${n.title}</h1>
-        <p class="section-desc">${n.intro}</p>
-        <div class="content-grid">${s}</div>
-    </section>`}function U(){const e=m().tutorials,n=e.groups.map(s=>{const i=s.items.map(t=>`
+        <h1>${t.title}</h1>
+        <p class="section-desc">${t.intro}</p>
+        <div class="content-grid">${r}</div>
+    </section>`}function _e(){const e=g().tutorials,t=e.groups.map(r=>{const i=r.items.map(n=>`
             <div class="module-card">
-                <div class="module-icon">${t.icon}</div>
+                <div class="module-icon">${n.icon}</div>
                 <div class="module-body">
-                    <h3>${t.title}</h3>
-                    <p>${t.content}</p>
-                    ${t.table?v(t.table):""}
-                    ${t.tips?k(t.tips):""}
-                    ${t.code?p(t.code,t.lang):""}
-                </div>
-            </div>`).join("");return`<h2>${s.title}</h2><div class="module-list">${i}</div>`}).join("");return`<section class="animate-fade">
+                    <h3>${n.title}</h3>
+                    <p>${n.content}</p>
+                    ${n.table?v(n.table):""}
+                    ${n.tips?k(n.tips):""}
+                    ${n.code?f(n.code,n.lang):""}
+                    ${n.youtube?renderYouTube(n.youtube):""}
+                    </div>
+                    </div>`).join("");return`<h2>${r.title}</h2><div class="module-list">${i}</div>`}).join("");return`<section class="animate-fade">
         <h1>${e.title}</h1>
         <p class="section-desc">${e.intro}</p>
-        ${n}
-    </section>`}function V(){const e=m().codewiki,n=e.categories.map(s=>{const i=s.items.map(t=>`
+        ${t}
+    </section>`}function Je(){const e=g().codewiki,t=e.categories.map(r=>{const i=r.items.map(n=>`
             <div class="wiki-item">
-                <div class="wiki-term">${t.term}</div>
-                <div class="wiki-def">${t.definition}</div>
+                <div class="wiki-term">${n.term}</div>
+                <div class="wiki-def">${n.definition}</div>
             </div>`).join("");return`<div class="wiki-cat">
-            <h3>${s.name}</h3>
+            <h3>${r.name}</h3>
             <div class="wiki-grid">${i}</div>
         </div>`}).join("");return`<section class="animate-fade">
         <div class="hero-badge">Enzyklopädie</div>
         <h1>${e.title}</h1>
         <p class="section-desc">${e.intro}</p>
-        <div class="wiki-list">${n}</div>
-    </section>`}function W(){const e=h[u];return`<section class="hero animate-fade">
+        <div class="wiki-list">${t}</div>
+    </section>`}function Ze(){const e=h[u];return`<section class="hero animate-fade">
         <div class="hero-badge">${e.title} Lernportal</div>
         <h1>Entfessele ${e.title.split(" ")[0]}<br>in deiner Konsole.</h1>
         <p>Meistere ${e.title} – von der Installation bis zu fertigen KI-Agenten. Mit eigenen Kursen, interaktiven Codelabs und einem Code-Editor direkt im Browser.</p>
@@ -1200,4 +1375,14 @@ Prüfe {{ $1 }} auf Vulnerabilities.`,lang:"markdown"},{step:"CI Hook Setup",cod
             <h2>🖥️ Playground – Probier es aus</h2>
             <div id="editor-container"></div>
         </div>
-    </section>`}window.navigate=function(e,n=null){window.location.hash=n?`${e}/${n}`:e};window.copyCode=function(e){const n=e.closest(".code-block").querySelector("code").innerText;navigator.clipboard.writeText(n).then(()=>{e.textContent="✅ Kopiert!",setTimeout(()=>e.textContent="📋 Kopieren",2e3)})};window.injectToEditor=function(e){const n=e.closest(".code-block").querySelector("code").innerText;if(window.editorInstance){window.editorInstance.setValue(n);const s=document.getElementById("editor-wrapper");s&&s.scrollIntoView({behavior:"smooth"})}else alert("Editor lädt noch...")};function Z(){const e=window.location.hash.substring(1)||"home",[n,s]=e.split("/");return{section:n,subId:s||null}}function q(e,n){switch(e){case"lernpfad":return _();case"module":return H();case"kurse":return S(n);case"codelabs":return E(n);case"tutorials":return U();case"codewiki":return V();default:return W()}}function f(){const{section:e,subId:n}=Z(),s=document.getElementById("app");s&&(s.innerHTML=q(e,n),window.scrollTo(0,0),document.querySelectorAll(".nav-links a").forEach(i=>{const t=i.getAttribute("href").replace("#","");i.classList.toggle("active",t===e)}),document.getElementById("editor-container")&&J())}window.addEventListener("hashchange",f);window.addEventListener("load",f);async function J(){const e=document.getElementById("editor-container");if(e){e.innerHTML='<div style="padding:20px;color:#94a3b8;">Lädt Editor...</div>';try{const{init:n}=await M(async()=>{const{init:s}=await import("./editor-hNmHkTZF.js").then(i=>i.b);return{init:s}},__vite__mapDeps([0,1]));n(e)}catch(n){console.error("Editor Fehler:",n)}}}export{M as _};
+    </section>`}window.navigate=function(e,t=null){window.location.hash=t?`${e}/${t}`:e};window.copyCode=function(e){const t=e.closest(".code-block").querySelector("code").innerText;navigator.clipboard.writeText(t).then(()=>{e.textContent="✅ Kopiert!",setTimeout(()=>e.textContent="📋 Kopieren",2e3)})};window.injectToEditor=function(e){const t=e.closest(".code-block").querySelector("code").innerText;if(window.editorInstance){window.editorInstance.setValue(t);const r=document.getElementById("editor-wrapper");r&&r.scrollIntoView({behavior:"smooth"})}else alert("Editor lädt noch...")};function Ye(){const e=window.location.hash.substring(1)||"home",[t,r]=e.split("/");return{section:t,subId:r||null}}function Qe(e,t){switch(e){case"lernpfad":return He();case"module":return Ue();case"kurse":return S(t);case"codelabs":return I(t);case"tutorials":return _e();case"codewiki":return Je();case"impressum":return qe();case"datenschutz":return Xe();default:return Ze()}}function qe(){return Ke}function Xe(){return Oe}function p(){const{section:e,subId:t}=Ye(),r=document.getElementById("app");r&&(r.innerHTML=Qe(e,t),window.scrollTo(0,0),document.querySelectorAll(".nav-links a").forEach(i=>{const n=i.getAttribute("href").replace("#","");i.classList.toggle("active",n===e)}),document.getElementById("editor-container")&&en())}window.addEventListener("hashchange",p);window.addEventListener("load",p);async function en(){const e=document.getElementById("editor-container");if(e){e.innerHTML='<div style="padding:20px;color:#94a3b8;">Lädt Editor...</div>';try{const{init:t}=await P(async()=>{const{init:r}=await import("./editor-D2g2SPEf.js").then(i=>i.b);return{init:r}},__vite__mapDeps([0,1]));t(e)}catch(t){console.error("Editor Fehler:",t)}}}window.addEventListener("DOMContentLoaded",()=>{localStorage.getItem("cookies-accepted")||setTimeout(()=>{const e=document.getElementById("cookie-banner");e&&e.classList.add("show")},1e3)});window.acceptCookies=function(){localStorage.setItem("cookies-accepted","true"),window.closeCookieBanner(),typeof p=="function"&&p()};window.renderYouTube=function(e){return localStorage.getItem("cookies-accepted")==="true"?`<iframe class="youtube-video" 
+            src="https://www.youtube-nocookie.com/embed/${e}" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>`:`<div class="youtube-placeholder">
+            <p>Für dieses Video wird eine Verbindung zu <strong>YouTube</strong> hergestellt. Dabei werden Daten an Drittanbieter übertragen.</p>
+            <button class="consent-btn" onclick="acceptCookies()">
+                <span style="font-size: 1.2rem;">▶</span> Video laden & Akzeptieren
+            </button>
+        </div>`};window.closeCookieBanner=function(){const e=document.getElementById("cookie-banner");e&&e.classList.remove("show")};export{P as _};
