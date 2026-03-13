@@ -11,7 +11,8 @@ export const lernpfad = {
             lang: 'text',
             chips: [
                 { label: 'Download IDE', url: 'https://antigravity.google/' },
-                { label: 'Cloud Setup', url: 'https://console.cloud.google.com/' }
+                { label: 'Cloud Setup', url: 'https://console.cloud.google.com/' },
+                { label: 'Offizielles Codelab', url: 'https://codelabs.developers.google.com/getting-started-google-antigravity?hl=de#0' }
             ]
         },
         {
@@ -31,7 +32,7 @@ export const lernpfad = {
 
 export const module = {
     title: '📦 Antigravity Konzepte',
-    intro: 'Verstehe, wie die agent-first Architektur funktioniert.',
+    intro: 'Verstehe, wie die agent-first Architektur funktioniert. Für tiefgehende Informationen besuche auch das <a href="https://codelabs.developers.google.com/getting-started-google-antigravity?hl=de#0" target="_blank" class="link">offizielle Google Antigravity Codelab</a>.',
     groups: [
         {
             title: '🤖 Die Agent-Architektur',
@@ -52,6 +53,58 @@ export const module = {
                     content: 'Das zentrale Dashboard zur Orchestrierung mehrerer Agenten, die parallel an verschiedenen Aufgaben arbeiten.',
                     code: 'In Mission Control siehst du:\n- Aktive Tasks\n- Generierte Artifacts\n- Browser-Recording der Agenten-Aktionen',
                     lang: 'text'
+                }
+            ]
+        },
+        {
+            title: '🛡️ Sicherheit & Kontrolle',
+            items: [
+                {
+                    title: 'Autonomy Policies',
+                    icon: '🛡️',
+                    content: 'Bestimme, wie viel Freiheit dein Agent hat. Du kannst zwischen Profilen wie "Review-driven development" (hohe Kontrolle) und "Full Autonomy" wählen.',
+                    tips: [
+                        'Nutze Allowlists für harmlose Shell-Befehle (ls, git status)',
+                        'Setze Denylists für gefährliche Befehle (rm -rf, sudo)',
+                        'Agenten fragen immer nach, bevor sie nicht-autorisierte Befehle ausführen'
+                    ]
+                },
+                {
+                    title: 'Shell Permissions',
+                    icon: '🐚',
+                    content: 'Verwalte detailliert, welche Terminal-Befehle ein Agent autonom ausführen darf, um die Sicherheit deines Systems zu gewährleisten.',
+                    code: '# Beispiel für eine Policy-Konfiguration:\n{\n  "allowed_commands": ["npm test", "git log"],\n  "require_approval": ["npm install", "rm"]\n}',
+                    lang: 'json'
+                }
+            ]
+        },
+        {
+            title: '🌐 Web-Integration',
+            items: [
+                {
+                    title: 'Browser Sub-Agent',
+                    icon: '🌍',
+                    content: 'Antigravity verfügt über einen spezialisierten Browser-Agenten, der das Web durchsuchen, Dokumentationen lesen und Web-UIs testen kann.',
+                    tips: [
+                        'Der Agent kann Screenshots und Video-Recordings von UI-Tests erstellen',
+                        'Ideal für Visual Regression Testing',
+                        'Kann Dokumentationen direkt von GitHub oder offiziellen API-Docs lesen'
+                    ]
+                }
+            ]
+        },
+        {
+            title: '🤝 Kollaboration mit Agenten',
+            items: [
+                {
+                    title: 'Interactive Artifacts',
+                    icon: '📄',
+                    content: 'Agenten liefern strukturierte Ergebnisse wie Task-Listen, Implementation Plans und Walkthroughs.',
+                    tips: [
+                        'Nutze Google-Docs-Style Kommentare in Blueprints',
+                        'Ändere Pläne ab, bevor der Agent mit der Implementierung beginnt',
+                        'Walkthroughs erklären dir Schritt für Schritt, was der Agent geändert hat'
+                    ]
                 }
             ]
         },
