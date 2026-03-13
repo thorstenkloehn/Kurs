@@ -1,75 +1,170 @@
-// Antigravity Content Definition
+// Google Antigravity Content Definition – Agent-First AI IDE
+
 export const lernpfad = {
-  title: "Google Antigravity Lernpfad",
-  description: "Vom ersten Setup bis zur fortgeschrittenen Agent-Orchestrierung in der Google Cloud.",
-  steps: [
-    { id: 1, title: "Google Cloud & SDK Setup", status: "completed" },
-    { id: 2, title: "Antigravity Agent Konzepte", status: "not-started" },
-    { id: 3, title: "Erweiterte Tools & Browser-Agent", status: "not-started" },
-    { id: 4, title: "MCP & Externe Integrationen", status: "not-started" },
-    { id: 5, title: "Sicherheit, Sandboxing & Enterprise", status: "not-started" }
-  ]
+    title: '📍 Lernpfad – Google Antigravity IDE',
+    intro: 'Willkommen in der Zukunft der Softwareentwicklung. Antigravity ist keine einfache IDE, sondern ein Ökosystem aus autonomen KI-Agenten, die deine Projekte steuern.',
+    steps: [
+        {
+            num: 1, title: 'Installation & Setup',
+            desc: 'Lade die Antigravity IDE herunter und verbinde deinen Google-Account für den Zugriff auf Gemini 3 Pro.',
+            code: '# Antigravity ist eine Desktop-App (Windows, macOS, Linux)\n# Nach der Installation:\n# 1. Öffne Antigravity\n# 2. Gehe zu Mission Control\n# 3. Verbinde deinen Google Cloud Account',
+            lang: 'text',
+            chips: [
+                { label: 'Download IDE', url: 'https://antigravity.google/' },
+                { label: 'Cloud Setup', url: 'https://console.cloud.google.com/' }
+            ]
+        },
+        {
+            num: 2, title: 'Mission Control & Workspaces',
+            desc: 'In Mission Control verwaltest du deine Agenten. Erstelle deinen ersten Workspace für ein bestehendes oder neues Projekt.',
+            code: '// In der UI:\n// Datei > Neuer Workspace > Lokalen Ordner wählen\n// Der Agent beginnt sofort mit der Indizierung deiner Codebase.',
+            lang: 'text'
+        },
+        {
+            num: 3, title: 'Der erste Agent-Task',
+            desc: 'Weise dem Agenten eine komplexe Aufgabe zu. Er wird einen Plan erstellen, den du reviewen kannst.',
+            code: '// Prompt in der Agent-Leiste:\n// "Migriere das gesamte Projekt von Webpack zu Vite und fix alle daraus resultierenden Fehler."',
+            lang: 'text'
+        }
+    ]
 };
 
-export const module = [
-  {
-    id: "m1",
-    title: "Foundations & Setup",
-    courses: [
-      { id: "c101", title: "Installation des Google Cloud SDK", type: "course" },
-      { id: "c102", title: "Navigation im Agent Manager", type: "course" },
-      { id: "c103", title: "Authentifizierung & Rollen (IAM)", type: "course" }
+export const module = {
+    title: '📦 Antigravity Konzepte',
+    intro: 'Verstehe, wie die agent-first Architektur funktioniert.',
+    groups: [
+        {
+            title: '🤖 Die Agent-Architektur',
+            items: [
+                {
+                    title: 'Agent-First Paradigm',
+                    icon: '🧠',
+                    content: 'Im Gegensatz zu Copilots, die Vorschläge machen, arbeiten Antigravity Agenten autonom über Datei-, Terminal- und Browser-Grenzen hinweg.',
+                    tips: [
+                        'Agenten können Aufgaben planen und selbst verifizieren',
+                        'Nutze den Mission Control Tab zur Überwachung',
+                        'Delegiere komplexe Refactorings'
+                    ]
+                },
+                {
+                    title: 'Mission Control (Dashboard)',
+                    icon: '🚀',
+                    content: 'Das zentrale Dashboard zur Orchestrierung mehrerer Agenten, die parallel an verschiedenen Aufgaben arbeiten.',
+                    code: 'In Mission Control siehst du:\n- Aktive Tasks\n- Generierte Artifacts\n- Browser-Recording der Agenten-Aktionen',
+                    lang: 'text'
+                }
+            ]
+        },
+        {
+            title: '📄 Artifacts & Planung',
+            items: [
+                {
+                    title: 'Implementation Plans (Blueprints)',
+                    icon: '🗺️',
+                    content: 'Bevor ein Agent Code schreibt, erstellt er einen detaillierten Plan. Du kannst diesen Plan kommentieren oder anpassen.',
+                    code: '1. Analyse der package.json\n2. Installation von Vite\n3. Konfiguration der vite.config.ts\n4. Validierung der Imports',
+                    lang: 'text'
+                },
+                {
+                    title: 'Artifacts & Verification',
+                    icon: '✅',
+                    content: 'Agenten liefern greifbare Artifacts (Pläne, Testberichte, Screenshots). Sie nutzen den integrierten Browser, um Web-UIs zu verifizieren.',
+                    tips: [
+                        'Reviewe Pläne vor der Ausführung',
+                        'Prüfe Screenshots bei UI-Änderungen',
+                        'Nutze die Rewind-Funktion bei Fehlern'
+                    ]
+                }
+            ]
+        },
+        {
+            title: '🛠️ Erweiterungen',
+            items: [
+                {
+                    title: 'Agent Skills (SKILL.md)',
+                    icon: '⚡',
+                    content: 'Erweitere die Fähigkeiten deiner Agenten durch Skills. Diese werden on-demand geladen, um das Kontextfenster zu schonen.',
+                    code: '# SKILL.md\ndescription: API-Integration-Spezialist\n---\nFokus auf REST/GraphQL Patterns...',
+                    lang: 'markdown'
+                }
+            ]
+        }
     ]
-  },
-  {
-    id: "m2",
-    title: "Agent Kernkonzepte",
-    courses: [
-      { id: "c201", title: "Agent Konfiguration: Vertex AI vs Gemini", type: "course" },
-      { id: "c202", title: "Workspaces & Agent-Fokus", type: "course" },
-      { id: "c203", title: "Agenten-Modi: Architekt vs. Implementierer", type: "course" }
+};
+
+export const kurse = {
+    title: '🎓 Antigravity Masterclass',
+    intro: 'Werde zum Agenten-Orchestrator.',
+    items: [
+        {
+            id: 'ag-master', badge: 'Experte', icon: '🏆',
+            title: 'Autonome Feature-Entwicklung',
+            duration: '45 Min',
+            description: 'Lerne, wie du eine komplette End-to-End Funktion nur durch Agenten-Steuerung bauen lässt.',
+            lernziele: ['Agent-Briefing optimieren', 'Multi-Step Pläne reviewen', 'Self-Healing Prozesse steuern'],
+            content: [
+                {
+                    step: 'Briefing & Planung',
+                    code: '"Baue ein User-Dashboard mit Auth-Integration und Unit-Tests."',
+                    lang: 'text'
+                },
+                {
+                    step: 'Review & Ausführung',
+                    code: 'Prüfe den generierten Blueprint und klicke auf "Apply Plan".',
+                    lang: 'text'
+                }
+            ]
+        }
     ]
-  },
-  {
-    id: "m3",
-    title: "Automatisierung & Workflows",
-    courses: [
-      { id: "c301", title: "Eigene Rulesets definieren", type: "course" },
-      { id: "c302", title: "Workflow-Orchestrierung mit Task Groups", type: "course" },
-      { id: "c303", title: "Batch-Processing mit Antigravity CLI", type: "course" }
+};
+
+export const codelabs = {
+    title: '🧪 Antigravity Labs',
+    intro: 'Interaktive Experimente in der IDE.',
+    items: [
+        {
+            id: 'lab-ag-ui', badge: 'Fortgeschritten', icon: '🌐', duration: '30 Min',
+            title: 'Visual Regression Lab',
+            goal: 'Lasse den Agenten ein CSS-Refactoring durchführen und die UI mittels Browser-Verification testen.',
+            steps: [
+                { title: 'CSS Refactor Task', code: '"Mache die UI responsive und nutze CSS Variables."', lang: 'text' },
+                { title: 'Browser Verification', code: 'Der Agent öffnet den integrierten Browser und prüft Breakpoints.', lang: 'text' }
+            ]
+        }
     ]
-  }
-];
+};
 
-export const kurse = [
-  { id: "k1", title: "Antigravity Fundamentals", level: "Beginner" },
-  { id: "k2", title: "Advanced Orchestration", level: "Advanced" }
-];
+export const tutorials = {
+    title: '📖 Dokumentation',
+    intro: 'Alles über die Konfiguration von Antigravity.',
+    groups: [
+        {
+            title: 'Konfiguration',
+            items: [
+                {
+                    title: 'Agent Rules (.agent/rules)',
+                    icon: '📜',
+                    content: 'Definiere projektweite Regeln, an die sich alle Agenten halten müssen (z.B. Codestil).',
+                    code: '# .agent/rules/style.md\n- Nutze immer Early Returns\n- Dokumentiere public Methoden in JSDoc',
+                    lang: 'markdown'
+                }
+            ]
+        }
+    ]
+};
 
-export const codelabs = [
-  { id: "cl1", title: "Workspace Setup", topic: "Google Antigravity Init", duration: "10 min" },
-  { id: "cl2", title: "Automatisierte Code-Reviews", topic: "Agent Skills", duration: "25 min" },
-  { id: "cl3", title: "Browser-Recording & Automation", topic: "Testing", duration: "40 min" },
-  { id: "cl4", title: "Eigener MCP Server mit Go/Python", topic: "Integration", duration: "60 min" }
-];
-
-export const tutorials = [
-  { id: "t1", title: "Installation unter Windows/macOS", category: "Installation" },
-  { id: "t2", title: "MCP Server in Google Cloud nutzen", category: "Advanced" },
-  { id: "t3", title: "Sicherheits-Checkups & Strict Mode", category: "Security" },
-  { id: "t4", title: "Debugging von Agenten-Output", category: "Quality" }
-];
-
-export const codewiki = [
-  { term: "Agent", definition: "Die Kern-KI-Entität, die Aufgaben im Workspace plant und ausführt." },
-  { term: "Agent Manager", definition: "Die grafische Oberfläche zur Verwaltung mehrerer Workspaces und Agenten-Instanzen." },
-  { term: "Artifacts", definition: "Spezielle Dokumententypen wie Implementierungspläne oder Walkthroughs, die vom Agenten generiert werden." },
-  { term: "Browser Subagent", definition: "Ein spezialisierter Agent, der Webbrowsing, Dokumentationsrecherche und UI-Tests durchführen kann." },
-  { term: "Context", definition: "Die Menge an Dateien und Informationen, die der Agent aktuell 'sieht' und für seine Entscheidungen nutzt." },
-  { term: "Focus", definition: "Der Prozess, dem Agenten mitzuteilen, welche Teile des Code-Repositories für die aktuelle Aufgabe relevant sind." },
-  { term: "MCP (Model Context Protocol)", definition: "Ein offener Standard, der es Agenten ermöglicht, sicher auf externe Datenquellen und Tools zuzugreifen." },
-  { term: "Rules", definition: "Benutzerdefinierte Anweisungen (oft in einer .rules-Datei), die das Verhalten und den Coding-Stil des Agenten steuern." },
-  { term: "Sandboxing", definition: "Die Ausführung von Code in einer isolierten Umgebung zum Schutz des Host-Systems." },
-  { term: "Strict Mode", definition: "Ein Sicherheitsmodus, der explizite Berechtigungen für jede Dateimanipulation oder Shell-Aktion erfordert." },
-  { term: "Task Group", definition: "Eine logische Gruppierung verwandter Aufgaben innerhalb eines Workspaces." }
-];
+export const codewiki = {
+    title: '📚 Antigravity Wiki',
+    intro: 'Wichtige Begriffe der Agent-IDE.',
+    categories: [
+        {
+            name: 'IDE Konzepte',
+            items: [
+                { term: 'Mission Control', definition: 'Das Dashboard zur Agenten-Verwaltung.' },
+                { term: 'Artifact', definition: 'Strukturiertes Output-Dokument eines Agenten.' },
+                { term: 'Agent Skill', definition: 'Modulare Fähigkeit, die on-demand geladen wird.' },
+                { term: 'Self-Healing', definition: 'KI-Prozess zur automatischen Fehlerkorrektur.' }
+            ]
+        }
+    ]
+};
